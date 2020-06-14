@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+  align-self: center;
+}
+
+img {
+  height: 100%;
+  max-width: 90%;
+}

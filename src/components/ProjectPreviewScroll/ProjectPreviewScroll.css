@@ -1,0 +1,80 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  transition: all .25s ease-in-out;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.itemSecondColumn {
+  grid-column: 3/5;
+  grid-row: 1/7;
+  border-right: 1px solid lightgray;
+  overflow-y: auto;
+}
+
+.projectTitle {
+  z-index: 1;
+  position: fixed;
+  font-size: 2vw;
+  color: black;
+  display: none;
+}
+
+.box:hover .projectTitle {
+  display: block;
+}
+
+.box:hover .thumbnail {
+  opacity: .3;
+}
+
+.box .thumbnail {
+  height: 90%;
+  width: 90%;
+  border: 1px solid lightgray;
+  background-position: center;
+  background-size: cover;
+}
+
+.box #queensboro {
+  background-image: url('../images/Queensboro/Queensboro_thumbnail.jpg');
+}
+
+.box #harlem {
+  background-image: url('../images/Harlem/Harlem_thumbnail.jpg');
+}
+
+.box #_3M {
+  background-image: url('../images/3MBoothatNeoCon2012/3M_thumbnail.jpg');
+}
+
+.box #bathbw {
+  background-image: url('../images/Bath_BodyWorks/BBWWallflower_thumbnail.jpg');
+}
+
+.box #fortgreene {
+  background-image: url('../images/FortGreene/FtGreene_thumbnail.jpg');
+}
+
+.box #marriot {
+  background-image: url('../images/MariottLibrary_UniversityofUtah/SOUTH_NORTH_thumbnail.jpg');
+}
+
+.box #sevenseven {
+  background-image: url('../images/SevenSeven/Thumbnail.jpg');
+}
+
+.box #xsre {
+  background-image: url('../images/XSRE/XSRE_thumbnail.jpg');
+}
+
+.box #franklin {
+  background-image: url('../images/FranklinSt/FranklinSt_thumbnail.jpg');
+}
+

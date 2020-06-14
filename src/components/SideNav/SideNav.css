@@ -1,0 +1,33 @@
+#sidebar {
+  display: flex;
+  text-align: center;
+  width:100vh;
+  min-width: 450px;
+  position: fixed;
+  left: 0;
+  transform-origin: left top;
+  transform:rotate(-90deg) translateX(-100%);
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.navTab {
+  flex:1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  height:100%;
+  line-height:45px;
+  border-right: 1px solid lightgray;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.navTab:hover {
+  background-color: #e1f3ed;
+  cursor: pointer;
+  color: black;
+}
+
+.slider {
+  max-width: 600px;
+}
