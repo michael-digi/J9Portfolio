@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import './SlideImage.css';
 
 function SlideImage(props) {
+  if (props.dots !== undefined && props.dots.length === 0) return
   return (
       <Fade key={props.index}>
         <div className='item'>

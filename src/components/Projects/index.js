@@ -97,9 +97,11 @@ function Projects() {
     // setDots(dots)
   }
 
-  function changeProject(project) {
+  function changeProject(newProject) {
+    if (newProject === project) return
     setImages([])
-    setProject(project)
+    setDots([])
+    setProject(newProject)
   }
 
   return (
