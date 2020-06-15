@@ -55,6 +55,7 @@ function Projects() {
     });
     setDots(sliderDots)
     setImages(images)
+    setImage(0)
   }
 
   function nextImage() {
@@ -98,7 +99,6 @@ function Projects() {
 
   function changeProject(project) {
     setProject(project)
-    setImage(0)
   }
 
   return (
