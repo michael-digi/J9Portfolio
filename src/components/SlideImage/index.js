@@ -10,7 +10,10 @@ function SlideImage(props) {
         <div className='item'>
           <img
             style={!loaded ? {display: 'none'} : {}}
-            onLoad={() => makeLoaded(true)} src={props.img}></img>
+            onLoad={() => {
+              makeLoaded(true)
+              console.log('loaded')
+            }} src={props.img}></img>
         </div>
     </Fade>
   );

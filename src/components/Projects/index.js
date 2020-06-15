@@ -75,7 +75,7 @@ function Projects() {
   function prevImage() {
     if (image - 1 <= - 1) {
       dots[image] = <SliderDot key={image} className='dot' index={image}/>
-      dots[images.length - 1] = <SliderDot key={0} className='dotClicked' index={0}/>
+      dots[images.length - 1] = <SliderDot key={images.length - 1} className='dotClicked' index={images.length - 1}/>
       setImage(images.length - 1) 
       return
     }
