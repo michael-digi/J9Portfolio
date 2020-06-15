@@ -54,8 +54,8 @@ function Projects() {
       else sliderDots.push(<SliderDot key={index} dotClick={dotClick} className='dot' index={index}/>)
     });
     setDots(sliderDots)
-    setImages(images)
     setImage(0)
+    setImages(images)
   }
 
   function nextImage() {
@@ -98,6 +98,7 @@ function Projects() {
   }
 
   function changeProject(project) {
+    setImages([])
     setProject(project)
   }
 
