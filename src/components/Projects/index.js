@@ -10,7 +10,7 @@ function Projects() {
   const [image, setImage] = useState(0)
   const [images, setImages] = useState([])
   const [dots, setDots] = useState([])
-  const [project, setProject] = useState('queensboro')
+  const [project, setProject] = useState('fortgreene')
 
   useEffect(() => {
     switch(project) {
@@ -130,7 +130,7 @@ function Projects() {
                 minWidth: '45px', 
                 borderRadius: '25%', 
                 color: 'white'}}></i>
-          { dots.length !== 0 ? <SlideImage index={image} img={images[image]}/> : null }
+          <SlideImage index={image} img={images[image]}/>
           <SliderDots dots={dots}/>
         </div>
     </div>

@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import './SlideImage.css';
 
 function SlideImage(props) {
-  if (props.dots !== undefined && props.dots.length === 0) return
+  const [loaded, makeLoaded] = useState(false)
+  
   return (
       <Fade key={props.index}>
         <div className='item'>
-          <img onLoad={console.log('loaded')} src={props.img}></img>
+          <img
+            style={!loaded ? {display: 'none'} : {}}
+            onLoad={() => makeLoaded(true)} src={props.img}></img>
         </div>
     </Fade>
   );

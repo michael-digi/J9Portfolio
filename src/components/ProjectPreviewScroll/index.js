@@ -5,11 +5,11 @@ function ProjectPreviewScroll(props) {
   return (
     <div className="itemSecondColumn">
       
-      <div className='box' onClick={() => props.changeProject('queensboro')}>
+      <div className='box' onClick={() => props.changeProject('fortgreene')}>
         <div className='projectTitle'>
-          Queensboro
+          Fort Greene
         </div>
-        <div className='thumbnail' id='queensboro'></div>
+        <div className='thumbnail' id='fortgreene'></div>
       </div>
       
       <div className='box' onClick={() => props.changeProject('harlem')}>
@@ -31,13 +31,6 @@ function ProjectPreviewScroll(props) {
           Bath and Body Works
         </div>
         <div className='thumbnail' id='bathbw'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('fortgreene')}>
-        <div className='projectTitle'>
-          Fort Greene
-        </div>
-        <div className='thumbnail' id='fortgreene'></div>
       </div>
       
       <div className='box' onClick={() => props.changeProject('marriot')}>
@@ -66,6 +59,13 @@ function ProjectPreviewScroll(props) {
           Franklin St
         </div>
         <div className='thumbnail' id='franklin'></div>
+      </div>
+
+      <div className='box' onClick={() => props.changeProject('queensboro')}>
+        <div className='projectTitle'>
+          Queensboro
+        </div>
+        <div className='thumbnail' id='queensboro'></div>
       </div>
     
     </div>

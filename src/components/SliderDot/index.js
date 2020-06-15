@@ -3,7 +3,7 @@ import './SliderDot.css'
 
 function SliderDot(props) {
   return (
-    <div className={props.className} onClick={()=> props.dotClick(props.index)}> </div>
+    <div className={props.className}> </div>
   )
 }
 
