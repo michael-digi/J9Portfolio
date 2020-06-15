@@ -9,8 +9,8 @@ import SliderDot from '../SliderDot';
 function Projects() {
   const [image, setImage] = useState(0)
   const [images, setImages] = useState([])
-  const [project, setProject] = useState('queensboro')
   const [dots, setDots] = useState([])
+  const [project, setProject] = useState('queensboro')
 
   useEffect(() => {
     switch(project) {
@@ -50,51 +50,39 @@ function Projects() {
     //r.keys().forEach((item, index) => { images.push(<img src={r(item)}></img>) });
     r.keys().forEach((item, index) => { 
       images.push(r(item))
-      if (index === 0) sliderDots.push(<SliderDot key={index} dotClick={dotClick} className='dotClicked' index={index}/>)
-      else sliderDots.push(<SliderDot key={index} dotClick={dotClick} className='dot' index={index}/>)
+      if (index === 0) sliderDots.push(<SliderDot key={index} className='dotClicked' index={index}/>)
+      else sliderDots.push(<SliderDot key={index} className='dot' index={index}/>)
     });
-    setDots(sliderDots)
-    setImage(0)
     setImages(images)
+    setImage(0)
+    setDots(sliderDots)
   }
 
   function nextImage() {
     if (image + 1 >= images.length || image >= images.length) {
-      dots[image] = <SliderDot key={image} dotClick={dotClick} className='dot' index={image}/>
-      dots[0] = <SliderDot key={0} dotClick={dotClick} className='dotClicked' index={0}/>
+      dots[image] = <SliderDot key={image} className='dot' index={image}/>
+      dots[0] = <SliderDot key={0} className='dotClicked' index={0}/>
       setDots(dots)
       setImage(0)
       return
     }
-    dots[image] = <SliderDot key={image} dotClick={dotClick} className='dot' index={image}/>
-    dots[image + 1] = <SliderDot key={image + 1} dotClick={dotClick} className='dotClicked' index={image + 1}/>
+    dots[image] = <SliderDot key={image} className='dot' index={image}/>
+    dots[image + 1] = <SliderDot key={image + 1} className='dotClicked' index={image + 1}/>
     setDots(dots)
     setImage(image + 1)
   }
   
   function prevImage() {
     if (image - 1 <= - 1) {
-      dots[image] = <SliderDot key={image} dotClick={dotClick} className='dot' index={image}/>
-      dots[images.length - 1] = <SliderDot key={0} dotClick={dotClick} className='dotClicked' index={0}/>
+      dots[image] = <SliderDot key={image} className='dot' index={image}/>
+      dots[images.length - 1] = <SliderDot key={0} className='dotClicked' index={0}/>
       setImage(images.length - 1) 
       return
     }
-    dots[image] = <SliderDot key={image} dotClick={dotClick} className='dot' index={image}/>
-    dots[image - 1] = <SliderDot key={image - 1} dotClick={dotClick} className='dotClicked' index={image - 1}/>
+    dots[image] = <SliderDot key={image} className='dot' index={image}/>
+    dots[image - 1] = <SliderDot key={image - 1} className='dotClicked' index={image - 1}/>
     setDots(dots)
     setImage(image - 1)
-  }
-
-  function dotClick(index) {
-    
-    console.log(image, ' image')
-    console.log(dots)
-    console.log(images)
-    // let newDots = dots
-    // newDots[image] = <SliderDot key={image} dotClick={dotClick} className='dot' index={image}/>
-    // console.log(dots, newDots)
-    // // dots[index] = <SliderDot key={index} dotClick={dotClick} className='dotClicked' index={index}/>
-    // setDots(dots)
   }
 
   function changeProject(newProject) {
@@ -142,7 +130,7 @@ function Projects() {
                 minWidth: '45px', 
                 borderRadius: '25%', 
                 color: 'white'}}></i>
-          <SlideImage index={image} img={images[image]}/>
+          { dots.length !== 0 ? <SlideImage index={image} img={images[image]}/> : null }
           <SliderDots dots={dots}/>
         </div>
     </div>
