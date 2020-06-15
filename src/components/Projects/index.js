@@ -97,8 +97,8 @@ function Projects() {
   }
 
   function changeProject(project) {
-    setImage(0)
     setProject(project)
+    setImage(0)
   }
 
   return (
