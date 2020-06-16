@@ -108,29 +108,29 @@ function Projects() {
               style={{
                 zIndex: 3, 
                 textAlign:'center', 
-                backgroundColor: 'black', 
+                // backgroundColor: 'black', 
                 position: 'absolute', 
                 top: '50%',
                 right: '5%',
-                fontSize: '3rem',
-                width: '3%',
-                minWidth: '45px',
+                fontSize: '2.5rem',
+                width: '1%',
+                minWidth: '20px', 
                 borderRadius: '25%', 
-                color: 'white'}}></i>
+                color: 'gray'}}></i>
             <i className='fa fa-angle-left' onClick={() => prevImage()}
               style={{
                 zIndex: 3, 
                 textAlign:'center', 
-                backgroundColor: 'black', 
+                // backgroundColor: 'black', 
                 position: 'absolute',
-                fontSize: '3rem',
+                fontSize: '2.5rem',
                 top: '50%',
                 left: '5%',
-                width: '3%',
-                minWidth: '45px', 
+                width: '1%',
+                minWidth: '20px', 
                 borderRadius: '25%', 
-                color: 'white'}}></i>
-          <SlideImage index={image} img={images[image]}/>
+                color: 'gray'}}></i>
+          <SlideImage index={image} img={images[image]} loaded={false}/>
           <SliderDots dots={dots}/>
         </div>
     </div>

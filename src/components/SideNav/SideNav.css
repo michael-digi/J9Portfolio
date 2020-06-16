@@ -7,23 +7,22 @@
   transform-origin: left top;
   transform:rotate(-90deg) translateX(-100%);
   background-color: white;
-  border-bottom: 1px solid lightgray;
-  overflow: auto;
+  border: 1px solid lightgray;
 }
 
 .navTab {
   width: 20%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.4vh;
+  /* font-family: 'Comfortaa'; */
+  font-size: 2.3vh;
   font-weight: bold;
   line-height:45px;
-  border-right: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
   letter-spacing: 1px;
   color: black;
 }
 
 .navTab:hover {
-  background-color: #e1f3ed;
+  background-color: #fff200;
   cursor: pointer;
   color: black;
 }

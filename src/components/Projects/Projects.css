@@ -9,7 +9,6 @@
 .itemFirstColumn {
   grid-column: 1/3;
   grid-row: 1/7;
-  border-right: 1px solid lightgray;
 }
 
 .itemB {
@@ -86,7 +85,7 @@
 }
 
 .fa {
-  opacity: .75;
+  opacity: .3;
 }
 
 .fa:hover {

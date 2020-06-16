@@ -4,6 +4,7 @@
   justify-content: center;
   height: 30%;
   transition: all .25s ease-in-out;
+  /* border: 1px solid black; */
 }
 
 .box:hover {
@@ -15,14 +16,17 @@
   grid-column: 3/5;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
   overflow-y: auto;
 }
 
 .projectTitle {
   z-index: 1;
   position: fixed;
-  font-size: 2vw;
-  color: black;
+  /* font-family: 'Comfortaa'; */
+  font-family: 'Calibri';
+  font-size: 1.7vw;
+  color: gray;
   display: none;
 }
 
@@ -36,7 +40,7 @@
 
 .box .thumbnail {
   height: 90%;
-  width: 90%;
+  width: 88%;
   border: 1px solid lightgray;
   background-position: center;
   background-size: cover;
