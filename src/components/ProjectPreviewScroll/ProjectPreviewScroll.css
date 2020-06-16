@@ -28,6 +28,7 @@
   font-size: 1.35vw;
   color: gray;
   display: none;
+  transition: all ease-in-out .25s;
 }
 
 .box:hover .projectTitle {
@@ -44,6 +45,7 @@
   border: 1px solid lightgray;
   background-position: center;
   background-size: cover;
+  transition: ease-in-out .25s;
 }
 
 .box #queensboro {
