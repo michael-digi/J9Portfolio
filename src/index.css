@@ -1,8 +1,8 @@
 html, body, #root {
   height: 100%;
   overflow: auto;
-  /* font-family: 'Comfortaa'; */
-  font-family: 'Calibri';
+  font-family: 'Comfortaa';
+  /* font-family: 'Calibri'; */
 }
 
 body {
