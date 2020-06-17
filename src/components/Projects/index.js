@@ -101,7 +101,7 @@ function Projects() {
         <div id='slideShow'>
             <i className='fa fa-angle-right' onClick={() => nextImage()} 
               style={{
-                zIndex: 3, 
+                zIndex: 1, 
                 textAlign:'center', 
                 // backgroundColor: 'black', 
                 position: 'absolute', 
@@ -114,7 +114,7 @@ function Projects() {
                 color: 'gray'}}></i>
             <i className='fa fa-angle-left' onClick={() => prevImage()}
               style={{
-                zIndex: 3, 
+                zIndex: 1, 
                 textAlign:'center', 
                 // backgroundColor: 'black', 
                 position: 'absolute',
@@ -125,6 +125,8 @@ function Projects() {
                 minWidth: '20px', 
                 borderRadius: '25%', 
                 color: 'gray'}}></i>
+            <div id='leftClickDiv' onClick={() => prevImage()}> </div>
+            <div id='rightClickDiv' onClick={() => nextImage()}> </div>
           <SlideImage index={image} img={images[image]} loaded={false}/>
           <SliderDots dots={dots}/>
         </div>

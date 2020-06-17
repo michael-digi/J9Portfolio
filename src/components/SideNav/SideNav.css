@@ -7,7 +7,7 @@
   transform-origin: left top;
   transform:rotate(-90deg) translateX(-100%);
   background-color: white;
-  border: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .navTab {
@@ -23,7 +23,7 @@
 }
 
 .navTab:hover {
-  background-color: #fff200;
+  background-color: #f7f3a9;
   cursor: pointer;
   color: black;
 }

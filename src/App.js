@@ -9,7 +9,7 @@ function App() {
     <>
       <SideNav />
       <Projects />
-      {/* <ArtGallery /> */}
+      <ArtGallery />
     </>
   );
 }

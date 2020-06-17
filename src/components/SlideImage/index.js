@@ -22,7 +22,7 @@ function SlideImage(props) {
               console.log('loaded')
             }} src={props.img}></img>
         </div>
-    </Fade>
+      </Fade>
   );
 }
 

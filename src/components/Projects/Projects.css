@@ -7,13 +7,37 @@
   min-width: 950px;
 }
 
+#leftClickDiv {
+  z-index: 1;
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+#leftClickDiv:hover {
+  cursor: w-resize
+}
+
+#rightClickDiv {
+  z-index: 1;
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+#rightClickDiv:hover {
+  cursor: e-resize
+}
+
 #slideShow {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   align-items: center;
-  grid-column: 10/21;
+  grid-column: 9/21;
   grid-row: 1/7;
 }
 

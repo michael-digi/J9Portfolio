@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 80%;
   width: 100%;
-  align-self: center;
 }
 
 img {
   height: 100%;
   max-width: 90%;
+  justify-self: center;
+  align-self: center;
 }
 
 .loader {
