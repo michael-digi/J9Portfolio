@@ -1,0 +1,82 @@
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+
+}
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 55%;
+  border-left: 1px solid lightgray;
+  overflow: auto;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid lightgray;
+  transition: all ease-in-out .25s;
+}
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  min-width: 150px;
+}
+
+.titleAndDesc {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.description {
+  font-size: .75rem;
+  text-align: justify;
+  margin-top: 2.5%;
+  color: gray;
+  
+}
+
+.projectTitle {
+  z-index: 1;
+  text-align: center;
+  /* font-family: 'Calibri'; */
+  font-size: 1.35vw;
+  color: gray;
+  position: absolute;
+  display: none;
+  transition: all ease-in-out .25s;
+}
+
+.thumbnailContainer:hover .projectTitle {
+  display: block;
+  cursor: pointer;
+}
+
+.thumbnailContainer:hover .thumbnail {
+  opacity: .2;
+  cursor: pointer;
+}
+
+
+

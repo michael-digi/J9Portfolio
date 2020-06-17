@@ -95,14 +95,9 @@ function Projects() {
   return (
     <div id='projectContainer'>
       {console.log(dots, ' this is dots')}
-      <div class="itemFirstColumn"></div>
+      
       <ProjectPreviewScroll changeProject={changeProject} />
-      <div class="itemE"></div>
-      <div class="itemF"></div>
-      <div class="itemG"></div>
-      <div class="itemH"></div>
-      <div class="itemJ"></div>
-      <div class="itemK"></div>
+      
         <div id='slideShow'>
             <i className='fa fa-angle-right' onClick={() => nextImage()} 
               style={{

@@ -1,73 +1,73 @@
 import React from 'react';
+import ProjectCard from '../ProjectCard';
 import './ProjectPreviewScroll.css';
 
 function ProjectPreviewScroll(props) {
   return (
-    <div className="itemSecondColumn">
-      
-      <div className='box' onClick={() => props.changeProject('fortgreene')}>
-        <div className='projectTitle'>
-          Fort Greene
-        </div>
-        <div className='thumbnail' id='fortgreene'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('harlem')}>
-        <div className='projectTitle'>
-          Harlem
-        </div>
-        <div className='thumbnail' id='harlem'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('_3M')}> 
-        <div className='projectTitle'>
-          3M Booth 2012
-        </div>
-        <div className='thumbnail' id='_3M'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('bathbw')}>
-        <div className='projectTitle'>
-          Bath and Body Works
-        </div>
-        <div className='thumbnail' id='bathbw'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('marriot')}>
-        <div className='projectTitle'>
-          Marriot
-        </div>
-        <div className='thumbnail' id='marriot'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('sevenseven')}>
-        <div className='projectTitle'>
-          Seven Seven
-        </div>
-        <div className='thumbnail' id='sevenseven'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('xsre')}>
-        <div className='projectTitle'>
-          XSRE
-        </div>
-        <div className='thumbnail' id='xsre'></div>
-      </div>
-      
-      <div className='box' onClick={() => props.changeProject('franklin')}>
-        <div className='projectTitle'>
-          Franklin St
-        </div>
-        <div className='thumbnail' id='franklin'></div>
-      </div>
-
-      <div className='box' onClick={() => props.changeProject('queensboro')}>
-        <div className='projectTitle'>
-          Queensboro
-        </div>
-        <div className='thumbnail' id='queensboro'></div>
-      </div>
-    
+    <div id='projectArea'>
+      <ProjectCard 
+        title='Fort Greene' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='fortgreene'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Harlem' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='harlem'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='3M Booth 2012' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='_3M'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Bath and Body Works' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='bathbw'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Marriot' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='marriot'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Seven Seven' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='sevenseven'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='XSRE' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='xsre'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Franklin St' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='franklin'
+        changeProject={props.changeProject}
+      />
+      <ProjectCard 
+        title='Queensboro' 
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        id='queensboro'
+        changeProject={props.changeProject}
+      />
     </div>
   )
 }

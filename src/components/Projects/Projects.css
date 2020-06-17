@@ -1,77 +1,10 @@
 #projectContainer {
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(6, 1fr);
   background-color: white;
-}
-
-.itemFirstColumn {
-  grid-column: 1/3;
-  grid-row: 1/7;
-}
-
-.itemB {
-  display: flex;
-  grid-column: 3/5;
-  grid-row: 1/3;
-  border: 1px solid white;
-  justify-content: center;
-  align-items: center;
-  border-bottom: none;
-  border-top: none;
-}
-
-.itemC {
-  grid-column: 3/5;
-  grid-row: 3/5;
-  border: 1px solid white;
-}
-
-.itemD {
-  grid-column: 3/5;
-  grid-row: 5/7;
-  border: 1px solid white;
-  border-top: none;
-  border-bottom: none;
-}
-
-.itemE {
-  grid-column: 5/7;
-  grid-row: 1/2;
-}
-
-.itemF {
-  grid-column: 7/9;
-  grid-row: 1/2;
-}
-
-.itemG {
-  grid-column: 9/11;
-  grid-row: 1/2;
-}
-
-.itemH {
-  grid-column: 5/7;
-  grid-row: 6/7;
-}
-
-.itemI {
-  grid-column: 5/7;
-  grid-row: 6/7;
-}
-
-.itemJ {
-  grid-column: 7/9;
-  grid-row: 6/7;
-  
-  border-top: none;
-  border-bottom: none;
-}
-
-.itemK {
-  grid-column: 9/11;
-  grid-row: 6/7;
+  min-width: 950px;
 }
 
 #slideShow {
@@ -80,16 +13,18 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  grid-column: 5/11;
+  grid-column: 10/21;
   grid-row: 1/7;
 }
 
 .fa {
   opacity: .3;
+  transition: all ease-in-out .25s;
 }
 
 .fa:hover {
   cursor: pointer;
+  transform: scale(1.5);
 }
 
 
