@@ -1,13 +1,13 @@
-#artGalleryContainer {
+#photoJournalContainer {
   display: grid;
   height: 100%;
-  border: 1px solid black;
+  
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(6, 1fr);
   min-width: 950px;
 }
 
-#artGalleryContainer .twoTenColumn {
+#photoJournalContainer .twoTenColumn {
   display: flex;
   flex-direction: row;
   grid-column: 2/9;
@@ -15,28 +15,29 @@
   border-right: 1px solid lightgray;
 }
 
-#artGalleryContainer .placeholderColumn {
+#photoJournalContainer .placeholderColumn {
   border-right: 1px solid lightgray;
   width: 42.8%;
   height: 100%;
 }
 
-#artGalleryContainer .tenFourteenColumn {
+#photoJournalContainer .tenFourteenColumn {
   grid-column: 9/13;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
 }
 
-#artGalleryContainer .fourteenEighteenColumn {
+#photoJournalContainer .fourteenEighteenColumn {
   grid-column: 13/17;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
 }
 
-#artGalleryContainer .igContainer {
+#photoJournalContainer .igContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
   height: 100%; 
   width: 57%; 
 }
@@ -53,11 +54,14 @@
   height: 100%;
 } */
 
-#artGalleryContainer .igPost {
+#photoJournalContainer .igPost {
   margin-top: 5%;
-  /* background-image: url('./imagesPhotoJournal/j9ig1.png');
+  background-image: url('./imagesPhotoJournal/j9ig1.png');
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
   height: 30%; 
   width: 88%; 
 }
+
+
+

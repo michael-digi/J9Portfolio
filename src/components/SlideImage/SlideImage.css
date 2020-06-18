@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-img {
+.item img {
   height: 100%;
   max-width: 90%;
   justify-self: center;
