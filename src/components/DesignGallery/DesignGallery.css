@@ -34,7 +34,6 @@
 }
 
 #designGalleryContainer .fourteenEighteenColumn {
-  padding-top: 100%;
   grid-column: 13/17;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
@@ -118,8 +117,8 @@
   margin-top: 2.5%;
   /* border: 1px solid black; */
   font-size: .8rem;
-  text-align: justify;
-  line-height: 1.5rem;
+  text-align: left;
+  line-height: 1rem;
 }
 
 .post .readMore {

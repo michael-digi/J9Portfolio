@@ -86,6 +86,26 @@ function ArtGallery() {
             it would make if it were implemented. “It is what it is,” he quotes a French poet... </div>
             <div className='readMore'> Continue Reading > </div>
           </div>
+
+          <div className='post' >
+            <div className='postImage'></div>
+            <div className='postTitle'> <b> What on Earth is a Garden?, Hunt </b>  </div>
+            <div className='postParagraph'> John Dixon Hunt introduces the concept of a garden 
+            by questioning what exactly it is. Before providing a definitive answer, 
+            however, he questions whether there is such an answer, and what difference 
+            it would make if it were implemented. “It is what it is,” he quotes a French poet... </div>
+            <div className='readMore'> Continue Reading > </div>
+          </div>
+
+          <div className='post' >
+            <div className='postImage'></div>
+            <div className='postTitle'> <b> What on Earth is a Garden?, Hunt </b>  </div>
+            <div className='postParagraph'> John Dixon Hunt introduces the concept of a garden 
+            by questioning what exactly it is. Before providing a definitive answer, 
+            however, he questions whether there is such an answer, and what difference 
+            it would make if it were implemented. “It is what it is,” he quotes a French poet... </div>
+            <div className='readMore'> Continue Reading > </div>
+          </div>
           
         </div>
       </div>
