@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/J9Portfolio/static/css/main.0c94f979.chunk.css",
-    "main.js": "/J9Portfolio/static/js/main.7e0583ec.chunk.js",
-    "main.js.map": "/J9Portfolio/static/js/main.7e0583ec.chunk.js.map",
+    "main.css": "/J9Portfolio/static/css/main.8d71fe38.chunk.css",
+    "main.js": "/J9Portfolio/static/js/main.5dd323cb.chunk.js",
+    "main.js.map": "/J9Portfolio/static/js/main.5dd323cb.chunk.js.map",
     "runtime-main.js": "/J9Portfolio/static/js/runtime-main.d67c5877.js",
     "runtime-main.js.map": "/J9Portfolio/static/js/runtime-main.d67c5877.js.map",
-    "static/js/2.b27c454e.chunk.js": "/J9Portfolio/static/js/2.b27c454e.chunk.js",
-    "static/js/2.b27c454e.chunk.js.map": "/J9Portfolio/static/js/2.b27c454e.chunk.js.map",
+    "static/js/2.7b9bf61c.chunk.js": "/J9Portfolio/static/js/2.7b9bf61c.chunk.js",
+    "static/js/2.7b9bf61c.chunk.js.map": "/J9Portfolio/static/js/2.7b9bf61c.chunk.js.map",
     "index.html": "/J9Portfolio/index.html",
-    "precache-manifest.fba8b97f83acb6d61f6a3f6f604a5180.js": "/J9Portfolio/precache-manifest.fba8b97f83acb6d61f6a3f6f604a5180.js",
+    "precache-manifest.9e9abba84c1bf1820d410ccf9f3874de.js": "/J9Portfolio/precache-manifest.9e9abba84c1bf1820d410ccf9f3874de.js",
     "service-worker.js": "/J9Portfolio/service-worker.js",
-    "static/css/main.0c94f979.chunk.css.map": "/J9Portfolio/static/css/main.0c94f979.chunk.css.map",
-    "static/js/2.b27c454e.chunk.js.LICENSE.txt": "/J9Portfolio/static/js/2.b27c454e.chunk.js.LICENSE.txt",
+    "static/css/main.8d71fe38.chunk.css.map": "/J9Portfolio/static/css/main.8d71fe38.chunk.css.map",
+    "static/js/2.7b9bf61c.chunk.js.LICENSE.txt": "/J9Portfolio/static/js/2.7b9bf61c.chunk.js.LICENSE.txt",
     "static/media/3MNeocon2012-3.jpg": "/J9Portfolio/static/media/3MNeocon2012-3.062ca6dc.jpg",
     "static/media/ProjectPreviewScroll.css": "/J9Portfolio/static/media/XSRE_thumbnail-min.7cbd97ba.jpg",
     "static/media/3M_thumbnail.jpg": "/J9Portfolio/static/media/3M_thumbnail.5190e5d0.jpg",
@@ -54,12 +54,13 @@
     "static/media/XSRE3.jpg": "/J9Portfolio/static/media/XSRE3.20064a93.jpg",
     "static/media/XSRE4.jpg": "/J9Portfolio/static/media/XSRE4.ca3ca227.jpg",
     "static/media/XSRE5.jpg": "/J9Portfolio/static/media/XSRE5.ef3fbb93.jpg",
-    "static/media/XSRE_thumbnail.jpg": "/J9Portfolio/static/media/XSRE_thumbnail.004ece98.jpg"
+    "static/media/XSRE_thumbnail.jpg": "/J9Portfolio/static/media/XSRE_thumbnail.004ece98.jpg",
+    "static/media/PhotoJournal.css": "/J9Portfolio/static/media/j9ig1.134474ac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d67c5877.js",
-    "static/js/2.b27c454e.chunk.js",
-    "static/css/main.0c94f979.chunk.css",
-    "static/js/main.7e0583ec.chunk.js"
+    "static/js/2.7b9bf61c.chunk.js",
+    "static/css/main.8d71fe38.chunk.css",
+    "static/js/main.5dd323cb.chunk.js"
   ]
 }
