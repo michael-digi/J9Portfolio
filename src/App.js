@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import SideNav from './components/SideNav';
 import Projects from './components/Projects';
 import PhotoJournal from './components/PhotoJournal';
 import ArtGallery from './components/ArtGallery';
-import DesignGallery from './components/DesignGallery';
+// import DesignGallery from './components/DesignGallery';
 import './App.css';
+
+const DesignGallery = React.lazy(() => import('./components/DesignGallery'))
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Projects />
       {/* <PhotoJournal /> */}
       {/* <ArtGallery /> */}
-      <DesignGallery />
+      <Suspense fallback={<div>Loading...</div>}>
+        <DesignGallery />
+      </Suspense>
     </>
   );
 }

@@ -95,6 +95,10 @@
   width: 88%; 
 }
 
+.post:hover {
+  cursor: pointer;
+}
+
 .post .postImage {
   height: 28vh;
   background-image: url('https://lh5.googleusercontent.com/z0H27w5Tz_g6GWzMwtffE4aKLdRnwEn1qAJeYWI1W4ODg9MTlSH24f3bUMjWjc1-BkNnhFo5ucC15AjeDgm-dLqoONu10ngsv35HGE947rlbHtsS0HKhq6n3f-VsIoFoipdhQnQ');
@@ -105,7 +109,7 @@
 }
 
 .post .postTitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
   align-content: center;
   margin-top: 5%;
@@ -113,10 +117,9 @@
 }
 
 .post .postParagraph {
-  
   margin-top: 2.5%;
   /* border: 1px solid black; */
-  font-size: .8rem;
+  font-size: .9rem;
   text-align: left;
   line-height: 1rem;
 }
@@ -124,5 +127,6 @@
 .post .readMore {
   text-align: right;
   margin-top: 2.5%;
+  font-size: .8rem;
   /* border: 1px solid black; */
 }

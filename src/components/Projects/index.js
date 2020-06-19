@@ -14,11 +14,6 @@ function Projects() {
   const [project, setProject] = useState('fortgreene')
 
   useEffect(() => {
-    async function getPhotos() {
-      const response = await axios.get('https://photos.app.goo.gl/1oPkHT8Zs2hiZdVt9')
-      console.log(response.data)
-    }
-    getPhotos()
     switch(project) {
       case 'queensboro':
         importImages(queensboro)

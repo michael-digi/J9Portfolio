@@ -12,14 +12,16 @@
 
 .navTab {
   width: 20%;
+  max-height: 45px;
   /* font-family: 'Comfortaa'; */
-  font-size: 1.95vh;
+  font-size: .9rem;
   /* font-weight: bold; */
   line-height: 45px;
   /* border-right: 1px solid lightgray; */
   letter-spacing: 1px;
   transition: ease-in-out .25s;
   color: black;
+  overflow: hidden;
 }
 
 .navTab:hover {
