@@ -24,6 +24,16 @@
   background-size: cover;
   border: 1px solid lightgray;
   transition: all ease-in-out .25s;
+  -webkit-animation: fadein ease-in .75s ; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn ease .75s; /* Firefox < 16 */
+        -ms-animation: fadeIn ease .75s; /* Internet Explorer */
+         -o-animation: fadeIn ease .75s; /* Opera < 12.1 */
+            animation: fadein ease-in .75s ;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .projectInfo {
@@ -59,7 +69,7 @@
 .projectTitle {
   text-align: center;
   /* font-family: 'Calibri'; */
-  font-size: 100%;
+  font-size: 1.2rem;
   color: gray;
   position: absolute;
   display: none;

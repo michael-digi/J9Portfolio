@@ -37,9 +37,20 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  grid-column: 9/23;
+  grid-column: 9/21;
   grid-row: 1/7;
+  -webkit-animation: fadein ease-in .75s ; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
+        -ms-animation: fadeIn ease 1s; /* Internet Explorer */
+         -o-animation: fadeIn ease 1s; /* Opera < 12.1 */
+            animation: fadein ease-in .75s ;
 }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 
 .fa {
   opacity: .3;

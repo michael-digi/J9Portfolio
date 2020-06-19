@@ -1,11 +1,11 @@
 #designGalleryContainer {
   display: grid;
-  height: 100%;
+  /* height: 100%; */
   /* border: 1px solid black; */
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(6, 1fr);
   min-width: 950px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 #designGalleryContainer .twoTenColumn {
@@ -16,8 +16,10 @@
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   scrollbar-width: none;
+  /* padding-top: 25%; */
+  margin-top: 25%;
 }
 
 /* #designGalleryContainer .placeholderColumn {
@@ -27,20 +29,23 @@
 } */
 
 #designGalleryContainer .tenFourteenColumn {
-  padding-top: 50%;
   grid-column: 9/13;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   scrollbar-width: none;
+  /* padding-top: 50%; */
+  margin-top: 50%;
 }
 
 #designGalleryContainer .fourteenEighteenColumn {
   grid-column: 13/17;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   scrollbar-width: none;
+  /* padding-top: 25%; */
+  margin-top: 25%;
 }
 
 /* #designGalleryContainer .fourthColumn {
