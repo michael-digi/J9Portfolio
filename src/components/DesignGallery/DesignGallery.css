@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  grid-column: 5/9;
+  grid-column: 4/8;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
@@ -28,7 +28,7 @@
 
 #designGalleryContainer .tenFourteenColumn {
   padding-top: 50%;
-  grid-column: 9/13;
+  grid-column: 8/12;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   overflow-y: auto;
@@ -36,7 +36,17 @@
 }
 
 #designGalleryContainer .fourteenEighteenColumn {
-  grid-column: 13/17;
+  grid-column: 12/16;
+  grid-row: 1/7;
+  border-right: 1px solid lightgray;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#designGalleryContainer .fourthColumn {
+  display: flex;
+  flex-direction: row;
+  grid-column: 16/20;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   overflow-y: auto;
