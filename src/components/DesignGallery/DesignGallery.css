@@ -17,6 +17,7 @@
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 /* #designGalleryContainer .placeholderColumn {
@@ -31,6 +32,7 @@
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 #designGalleryContainer .fourteenEighteenColumn {
@@ -38,6 +40,7 @@
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 #designGalleryContainer .twoTenColumn #postContainer {
