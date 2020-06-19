@@ -1,7 +1,8 @@
 #designGalleryContainer {
   display: grid;
-  /* height: 100%; */
+  height: 100%;
   /* border: 1px solid black; */
+  border-top: 1px solid lightgray;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(6, 1fr);
   min-width: 950px;
@@ -9,17 +10,14 @@
 }
 
 #designGalleryContainer .twoTenColumn {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   grid-column: 5/9;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   scrollbar-width: none;
-  /* padding-top: 25%; */
-  margin-top: 25%;
+  padding-top: 25%;
+  /* margin-top: 25%; */
 }
 
 /* #designGalleryContainer .placeholderColumn {
@@ -32,20 +30,20 @@
   grid-column: 9/13;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   scrollbar-width: none;
-  /* padding-top: 50%; */
-  margin-top: 50%;
+  padding-top: 50%;
+  /* margin-top: 50%; */
 }
 
 #designGalleryContainer .fourteenEighteenColumn {
   grid-column: 13/17;
   grid-row: 1/7;
   border-right: 1px solid lightgray;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   scrollbar-width: none;
-  /* padding-top: 25%; */
-  margin-top: 25%;
+  padding-top: 25%;
+  /* margin-top: 25%; */
 }
 
 /* #designGalleryContainer .fourthColumn {
@@ -58,10 +56,15 @@
   scrollbar-width: none;
 } */
 
+
+
+#designGalleryContainer .twoTenColumn #postContainer::-webkit-scrollbar { width: 0 !important }
+
 #designGalleryContainer .twoTenColumn #postContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* overflow-y: auto; */
   /* height: 100%;  */
   width: 100%;
 }

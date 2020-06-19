@@ -1,11 +1,11 @@
-#artGalleryContainer {
+/* #designGalleryContainer {
   display: grid;
   height: 100%;
   border: 1px solid black;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(6, 1fr);
   min-width: 950px;
-}
+} */
 
 #artGalleryContainer .twoTenColumn {
   display: flex;
