@@ -120,10 +120,6 @@ function ArtGallery() {
           
         </div>
       </div>
-
-      <div className='fourthColumn'>
-        
-      </div>
     
     </div>
   )
