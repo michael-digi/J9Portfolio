@@ -25,7 +25,18 @@
   opacity: .7;
   border-radius: 10px;
   align-self: flex-end;
+  display: none;
   /* bottom: 100px; */
+  -webkit-animation: fadeIn ease 5s ; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn ease .5s; /* Firefox < 16 */
+   -ms-animation: fadeIn ease .5s; /* Internet Explorer */
+    -o-animation: fadeIn ease .5s; /* Opera < 12.1 */
+       animation: fadeIn ease .5s ;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: .7; }
 }
 
 .loader {

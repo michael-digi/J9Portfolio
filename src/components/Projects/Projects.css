@@ -46,6 +46,10 @@
             animation: fadein ease-in .75s ;
 }
 
+#slideShow:hover #description {
+  display: block;
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
