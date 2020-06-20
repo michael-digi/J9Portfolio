@@ -33,13 +33,13 @@ function ProjectPreviewScroll(props) {
         id='bathbw'
         changeProject={props.changeProject}
       />
-      <ProjectCard 
+      {/* <ProjectCard 
         title='Marriot' 
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         id='marriot'
         changeProject={props.changeProject}
-      />
+      /> */}
       <ProjectCard 
         title='Seven Seven' 
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

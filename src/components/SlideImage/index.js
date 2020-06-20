@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Loader from 'react-loader-spinner'
+import { descriptions }  from '../Projects/projectDescriptions'
 import Fade from 'react-reveal/Fade';
 import './SlideImage.css';
-import { cleanup } from '@testing-library/react';
 
 function SlideImage(props) {
   const [loaded, makeLoaded] = useState(false)
-
+  console.log(descriptions)
   useEffect(() => {
     makeLoaded(props.loaded)
   },[])
@@ -20,7 +19,8 @@ function SlideImage(props) {
             onLoad={() => {
               makeLoaded(true)
               console.log('loaded')
-            }} src={props.img}></img>
+            }} src={props.img} />
+          <div id='description'> {descriptions[props.project]} </div>
         </div>
       </Fade>
   );

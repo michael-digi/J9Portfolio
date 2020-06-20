@@ -1,5 +1,5 @@
 #projectArea {
-  grid-column: 5/9;
+  grid-column: 2/3;
   grid-row: 1/7;
   overflow: auto;
   border-right: 1px solid lightgray;
@@ -7,65 +7,7 @@
   scrollbar-width: none;
 }
 
-
 #projectArea::-webkit-scrollbar { width: 0 !important }
-
-
-/* .projectInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 80%;
-  text-align: left;
-  padding-right: 2%;
-  padding-left: 60px;
-  border-right: 1px solid lightgray;
-} */
-/* 
-
-
-
-/* .box:hover {
-  cursor: pointer;
-  transform: scale(1.025);
-}
-
-.itemScrollColumnProjectDescription {
-  grid-column: 1/3;
-  grid-row: 1/7;
-  border-left: 1px solid lightgray;
-}
-
-.itemScrollColumnProjectThumbnails {
-  grid-column: 3/5;
-  grid-row: 1/7;
-  border-right: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-} */
-
-
-/* .box:hover .projectTitle {
-  display: block;
-}
-
-.box:hover .thumbnail {
-  opacity: .4;
-} */
-
-/* .thumbnail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5%;
-  height: 90%;
-  width: 90%;
-  margin-right: 4%;
-  margin-left: 4%;
-  background-position: center;
-  background-size: cover;
-  transition: ease-in-out .2s;
-} */
 
 .thumbnail#queensboro {
   background-image: url('../images/Queensboro/thumbnail/Queensboro_thumbnail-min.jpg');
@@ -84,12 +26,12 @@
 }
 
 .thumbnail#fortgreene {
-  background-image: url('../images/FortGreene/thumbnail/FtGreene_thumbnail-min.jpg');
+  background-image: url('../images/FortGreene/thumbnail/FtGreene_thumbnail-min.webp');
 }
 
-.thumbnail#marriot {
-  background-image: url('../images/MariottLibrary_UniversityofUtah/thumbnail/SOUTH_NORTH_thumbnail-min.jpg');
-}
+/* .thumbnail#marriot {
+  background-image: url('../images/MariottLibrary_UniversityofUtah/thumbnail/SOUTH_NORTH_thumbnail-min.webp');
+} */
 
 .thumbnail#sevenseven {
   background-image: url('../images/SevenSeven/thumbnail/Thumbnail-min.jpg');

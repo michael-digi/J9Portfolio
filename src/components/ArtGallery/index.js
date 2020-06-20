@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Post from '../Post';
 import { parse } from '../helpers';
 // import axios from 'axios'
-import './ArtGallery.css';
+import '../DesignGallery/DesignGallery.css';
 
 function ArtGallery() {
   const RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`;

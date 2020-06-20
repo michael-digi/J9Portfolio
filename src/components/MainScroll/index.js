@@ -16,10 +16,10 @@ function MainScroll() {
       <Projects />
       {/* <PhotoJournal /> */}
       <Suspense fallback={<div>Loading...</div>}>
-        <ArtGallery />
+        <DesignGallery />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <DesignGallery />
+        <ArtGallery />
       </Suspense>
     </>
   );

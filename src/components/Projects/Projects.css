@@ -1,10 +1,10 @@
 #projectContainer {
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: white;
-  min-width: 950px;
+  /* min-width: 950px; */
 }
 
 #leftClickDiv {
@@ -37,8 +37,8 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  grid-column: 9/21;
-  grid-row: 1/7;
+  grid-column: 3/6;
+  grid-row: 1/4;
   -webkit-animation: fadein ease-in .75s ; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
         -ms-animation: fadeIn ease 1s; /* Internet Explorer */

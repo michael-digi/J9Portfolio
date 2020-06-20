@@ -11,7 +11,7 @@ function Post(props) {
       <div className='postImage' style={{backgroundImage: `url(${props.img})`}}></div>
       <div className='postTitle'> <b> {props.title} </b>  </div>
       <div className='postParagraph'> 
-        {paragraph} . . .
+        {paragraph} . . . 
       </div>
       <div className='readMore'> Continue Reading > </div>
     </div>

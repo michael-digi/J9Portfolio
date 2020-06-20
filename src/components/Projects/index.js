@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, marriot, sevenseven} from '../imageLinks';
+import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
 import SliderDots from '../SliderDots';
 import ProjectPreviewScroll from '../ProjectPreviewScroll';
 import './Projects.css';
@@ -36,9 +36,9 @@ function Projects() {
       case 'xsre':
         importImages(xsre)
         break;
-      case 'marriot':
-        importImages(marriot)
-        break;
+      // case 'marriot':
+      //   importImages(marriot)
+      //   break;
       case 'sevenseven':
         importImages(sevenseven)
         break;
@@ -128,7 +128,7 @@ function Projects() {
                 color: 'gray'}}></i>
             <div id='leftClickDiv' onClick={() => prevImage()}> </div>
             <div id='rightClickDiv' onClick={() => nextImage()}> </div>
-          <SlideImage index={image} img={images[image]} loaded={false}/>
+          <SlideImage project={project} index={image} img={images[image]} loaded={false}/>
           <SliderDots dots={dots}/>
         </div>
     </div>

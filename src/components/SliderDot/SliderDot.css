@@ -6,18 +6,9 @@
   opacity: .5
 }
 
-/* .dot:hover {
-  cursor: pointer;
-} */
-
 .dotClicked {
-  cursor: pointer;
   height: 8px;
   width: 8px;
   border-radius: 10px;
   background-color: black;
 }
-
-/* .dotClicked:hover {
-  cursor: pointer;
-} */

@@ -76,7 +76,8 @@ export function decodeHTMLEntities(text) {
     newText = newText.substring(0, newText.length - 1)
   }
   var textArea = document.createElement('textarea');
-  textArea.innerHTML = newText;
+  textArea.innerHTML = newText.replace(/&#8230;/g, '');
+  console.log()
   return textArea.value;
 }
 
