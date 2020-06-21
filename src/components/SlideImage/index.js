@@ -14,7 +14,7 @@ function SlideImage(props) {
       <Fade key={props.index}>
         <div className='item'>
         {loaded ?  null : <div className='loader'></div>}
-          <img
+          <img id='slideImage'
             style={loaded ? {} : {display: 'none'} }
             onLoad={() => {
               makeLoaded(true)
