@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
 import SliderDots from '../SliderDots';
 import ProjectPreviewScroll from '../ProjectPreviewScroll';

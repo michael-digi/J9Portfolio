@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Post from '../Post';
 import { parse } from '../helpers';
-// import axios from 'axios'
 import '../DesignGallery/DesignGallery.css';
 
 function ArtGallery() {

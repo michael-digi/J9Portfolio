@@ -14,9 +14,9 @@
 }
 
 .item #description {
-  z-index: 2;
+  z-index: 5;
   max-width: 75%;
-  font-size: .9rem;
+  font-size: .8rem;
   color: white;
   position: absolute;
   border: 1px solid black;

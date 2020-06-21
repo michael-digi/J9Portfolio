@@ -1,6 +1,5 @@
 import React from 'react';
 import { decodeHTMLEntities } from '../helpers';
-import parse from 'html-react-parser';
 import './Post.css';
 
 function Post(props) {
