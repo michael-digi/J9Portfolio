@@ -1,7 +1,7 @@
 #articleContainer {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  height: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  /* height: 100%; */
 }
 
 #articleContainer img {
@@ -9,8 +9,8 @@
 }
 
 #article {
-  grid-column: 4/9;
-  margin-top: 10%;
+  grid-column: 3/6;
+  margin: 5% 11% 5% 11%;
 }
 
 figure {

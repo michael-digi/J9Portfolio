@@ -1,7 +1,6 @@
 #articlesList {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  grid-column: 4/9;
-  margin-top: 10%;
+  grid-column: 3/6;
+  margin: 10%;
 }

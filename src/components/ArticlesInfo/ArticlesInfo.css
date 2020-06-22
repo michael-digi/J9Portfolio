@@ -1,16 +1,19 @@
 #articleTitleContainer {
   display: flex;
   align-items: flex-start;
-  grid-column: 1/3;
-  font-size: 1.25rem;
-  margin: 20% 0% 0% 20%;
+  padding: 10%;
+  grid-column: 2/3;
+  font-size: 1.2vw;
   flex-direction: column;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
 #articleTitle {
   border-bottom: 1px solid black;
   padding-bottom: 10%;
   margin-bottom: 0px;
+  max-width: 90%;
 }
 
 #articleAuthorAndDate {

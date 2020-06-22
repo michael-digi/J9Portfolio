@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import ArticlesSideNav from '../ArticlesSideNav';
+import SideNavArticles from '../SideNavArticles';
 import ArticlesList from '../ArticlesList';
+import ArticlesInfo from '../ArticlesInfo';
 import { parseXML } from '../helpers';
 import './AllArticles.css';
 
 function AllArticles() {
   const [articles, setArticles] = useState([])
+  const [title, setTitle] = useState('')
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -16,15 +18,19 @@ function AllArticles() {
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => parseXML(data))
       .then(parsed => {
+        setTitle(parsed.channel.title)
         setArticles(parsed.channel.item)
   })
 }, [])
   
   return (
-    <div id='articlesByCategoryContainer'>
-      <ArticlesSideNav articleTitle={'History Theory & Methodology'}/>
-      <ArticlesList articles={articles} />
-    </div>
+    <>
+      <SideNavArticles />
+      <div id='articlesByCategoryContainer'>
+        <ArticlesInfo articleTitle={title}/>
+        <ArticlesList articles={articles} />
+      </div>
+    </>
   )
 }
 

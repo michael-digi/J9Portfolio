@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { parseXML, decodeHTMLEntitiesParagraphs } from '../helpers';
-import ArticlesSideNav from '../ArticlesSideNav';
+import SideNavArticles from '../SideNavArticles';
+import ArticlesInfo from '../ArticlesInfo';
 import { NavLink } from 'react-router-dom';
 import parse from 'html-react-parser';
 // import { useSelector, useDispatch } from 'react-redux'
@@ -12,6 +13,7 @@ function Article(props) {
   const [articleTitle, setArticleTitle] = useState('')
   const [articleAuthor, setArticleAuthor] = useState('')
   const [articleDate, setArticleDate] = useState('')
+  // const [articleImage, setArticleImage] = useState('')
   const months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
   
   useEffect(() => {
@@ -28,13 +30,20 @@ function Article(props) {
       .then(parsed => {
         parsed.channel.item.forEach(item => {
           if (item.title.includes(props.match.params.title)) {
+            // console.log(item)
+            // let img;
             let date = new Date(item.pubDate)
             let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
             let decoded = parse(decodeHTMLEntitiesParagraphs(item['content:encoded']))
+            // {item['media:content'][1] !== undefined 
+            // ? img = item['media:content'][1]
+            // : img = item['media:content'][0]}
+            // console.log(img.url)
             setArticleBody(decoded)
             setArticleTitle(item.title)
             setArticleAuthor(item['dc:creator'])
             setArticleDate(pubDate)
+            // setArticleImage(img.url)
           }
         })
     })
@@ -42,11 +51,13 @@ function Article(props) {
 
   return (
     <>
+      <SideNavArticles />
       <div id='articleContainer'>
-        <ArticlesSideNav 
+        <ArticlesInfo 
           articleTitle={articleTitle} 
           articleAuthor={articleAuthor}
           articleDate={articleDate}
+          // articleImage={articleImage}
         />
         <div id='article'> {articleBody} </div>
       </div>

@@ -3,13 +3,13 @@
   margin-top: 2.5%;
   flex-direction: column;
   width: 100%;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   transition: all .25s ease-in-out;
 }
 
 #articlesCard:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 #articlesCardTitle {
