@@ -1,3 +1,8 @@
+.post {
+  color: black;
+  text-decoration: none;
+}
+
 .post:hover {
   cursor: pointer;
 }
@@ -7,11 +12,11 @@
   background-position: center;
   border: 1px solid lightgray;
   background-size: cover;
-  -webkit-animation: fadein ease-in .75s ; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
-        -ms-animation: fadeIn ease 1s; /* Internet Explorer */
-         -o-animation: fadeIn ease 1s; /* Opera < 12.1 */
-            animation: fadein ease-in .75s ;
+  -webkit-animation: fadein ease-in .75s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
+      -ms-animation: fadeIn ease 1s; /* Internet Explorer */
+       -o-animation: fadeIn ease 1s; /* Opera < 12.1 */
+          animation: fadein ease-in .75s;
 }
 
 @keyframes fadein {

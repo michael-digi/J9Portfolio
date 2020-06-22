@@ -30,3 +30,10 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #sidebar {
+    display: none;
+  }
+}
+

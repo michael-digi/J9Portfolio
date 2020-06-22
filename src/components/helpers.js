@@ -6,7 +6,7 @@ export function flatten(object) {
   return check ? flatten(_.values(object)[0]) : object;
 }
 
-export function parse(xml) {
+export function parseXML(xml) {
   var data = {};
 
   var isText = xml.nodeType === 3,
@@ -40,7 +40,7 @@ export function parse(xml) {
     // if we've not come across a child with this nodeType, add it as an object
     // and return here
     if (!_.has(data, name)) {
-      data[name] = parse(child);
+      data[name] = parseXML(child);
       return;
     }
 
@@ -49,7 +49,7 @@ export function parse(xml) {
     if (!_.isArray(data[name])) { data[name] = [data[name]]; }
 
     // and finally, append the new child
-    data[name].push(parse(child));
+    data[name].push(parseXML(child));
   });
 
   // if we can, let's fold some attributes into the body
@@ -67,7 +67,7 @@ export function parse(xml) {
 }
 
 export function stringToHTML (str) {
-  return parse(str)
+  return parseXML(str)
 };
 
 export function decodeHTMLEntities(text) {
@@ -75,9 +75,15 @@ export function decodeHTMLEntities(text) {
   if (newText[newText.length - 1] === ',') {
     newText = newText.substring(0, newText.length - 1)
   }
-  var textArea = document.createElement('textarea');
+  let textArea = document.createElement('textarea');
   textArea.innerHTML = newText.replace(/&#8230;/g, '');
   console.log()
+  return textArea.value;
+}
+
+export function decodeHTMLEntitiesParagraphs(text) {
+  let textArea = document.createElement('textarea');
+  textArea.innerHTML = text
   return textArea.value;
 }
 
