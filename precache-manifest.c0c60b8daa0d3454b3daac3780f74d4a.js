@@ -1,51 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60abf063a56fdf2160f8ce41efeee0df",
+    "revision": "719154fde0951fa0daf947d4f0032208",
     "url": "/J9Portfolio/index.html"
   },
   {
-    "revision": "bd782eabeecaaaa35d97",
-    "url": "/J9Portfolio/static/css/4.c9fdc50d.chunk.css"
+    "revision": "1885baeb120f1b967cd9",
+    "url": "/J9Portfolio/static/css/3.1fc65a4c.chunk.css"
   },
   {
-    "revision": "71522ed4e12e9741ed88",
-    "url": "/J9Portfolio/static/css/5.c9fdc50d.chunk.css"
+    "revision": "15ca992707c56cb054eb",
+    "url": "/J9Portfolio/static/css/4.1fc65a4c.chunk.css"
   },
   {
-    "revision": "d59c777c0a29311ee212",
-    "url": "/J9Portfolio/static/css/main.21e7b7c3.chunk.css"
+    "revision": "5b9225b488f7fae629af",
+    "url": "/J9Portfolio/static/css/main.e7a05f7f.chunk.css"
   },
   {
-    "revision": "ed6e72e13ec4dbf85969",
-    "url": "/J9Portfolio/static/js/0.d93d9dbe.chunk.js"
+    "revision": "acb27f31e977b52373cb",
+    "url": "/J9Portfolio/static/js/2.81528550.chunk.js"
   },
   {
-    "revision": "275fe79abee3b697f1673c8bd9c58856",
-    "url": "/J9Portfolio/static/js/0.d93d9dbe.chunk.js.LICENSE.txt"
+    "revision": "64bea2e190f27355a76963b8cb94bb7b",
+    "url": "/J9Portfolio/static/js/2.81528550.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b066ae34d00f1ef645a8",
-    "url": "/J9Portfolio/static/js/3.ec0cdb6a.chunk.js"
+    "revision": "1885baeb120f1b967cd9",
+    "url": "/J9Portfolio/static/js/3.879890a8.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/J9Portfolio/static/js/3.ec0cdb6a.chunk.js.LICENSE.txt"
+    "revision": "15ca992707c56cb054eb",
+    "url": "/J9Portfolio/static/js/4.5d698e12.chunk.js"
   },
   {
-    "revision": "bd782eabeecaaaa35d97",
-    "url": "/J9Portfolio/static/js/4.a7c77963.chunk.js"
+    "revision": "5b9225b488f7fae629af",
+    "url": "/J9Portfolio/static/js/main.bf4fda12.chunk.js"
   },
   {
-    "revision": "71522ed4e12e9741ed88",
-    "url": "/J9Portfolio/static/js/5.e2cde01f.chunk.js"
-  },
-  {
-    "revision": "d59c777c0a29311ee212",
-    "url": "/J9Portfolio/static/js/main.a4865073.chunk.js"
-  },
-  {
-    "revision": "69892128ecd5039028c9",
-    "url": "/J9Portfolio/static/js/runtime-main.5fb7a7f0.js"
+    "revision": "aa9a0955b8c9202158a0",
+    "url": "/J9Portfolio/static/js/runtime-main.1ea4a0a0.js"
   },
   {
     "revision": "062ca6dc5a56bd5723759498e8bfd494",
