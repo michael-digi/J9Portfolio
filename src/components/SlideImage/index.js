@@ -5,7 +5,6 @@ import './SlideImage.css';
 
 function SlideImage(props) {
   const [loaded, makeLoaded] = useState(false)
-  console.log(descriptions)
   useEffect(() => {
     makeLoaded(props.loaded)
   },[])
@@ -18,7 +17,6 @@ function SlideImage(props) {
             style={loaded ? {} : {display: 'none'} }
             onLoad={() => {
               makeLoaded(true)
-              console.log('loaded')
             }} src={props.img} />
           <div id='description'> {descriptions[props.project]} </div>
         </div>

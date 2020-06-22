@@ -1,11 +1,10 @@
 import React, {Suspense, lazy} from 'react';
 import SideNav from '../SideNav';
 import Projects from '../Projects';
-//import PhotoJournal from '../PhotoJournal';
 import './MainScroll.css';
 
+const PhotoJournal= lazy(() => import('../PhotoJournal'))
 const DesignGallery = lazy(() => import('../DesignGallery'))
-
 const ArtGallery = lazy(() => import('../ArtGallery'))
 
 function MainScroll() {
@@ -13,7 +12,9 @@ function MainScroll() {
     <>
       <SideNav />
       <Projects />
-      {/* <PhotoJournal /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <PhotoJournal />
+      </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <DesignGallery />
       </Suspense>

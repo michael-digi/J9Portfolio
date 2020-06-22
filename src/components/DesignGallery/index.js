@@ -17,7 +17,6 @@ function DesignGallery() {
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => parseXML(data))
     .then(parsed => {
-      console.log(parsed.channel.item[0].link)
       dispatch(setDesignArticles(parsed.channel.item))
     })
   }, [])

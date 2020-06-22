@@ -94,7 +94,6 @@ function Projects() {
 
   return (
     <div id='projectContainer'>
-      {console.log(dots, ' this is dots')}
       
       <ProjectPreviewScroll changeProject={changeProject} />
       

@@ -8,7 +8,6 @@ function ArticlesList(props) {
   
   useEffect(() => {
     let cards = makeArticleCards(props.articles)
-    console.log(cards)
     setCards(cards)
   }, [props])
   

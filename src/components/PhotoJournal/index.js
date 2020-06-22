@@ -1,30 +1,60 @@
-import React, { useEffect } from 'react';
-import axios from 'axios'
-import photo1 from './imagesPhotoJournal/j9ig1.png'
+import React, { useState, useEffect } from 'react';
+import InstagramPhoto from '../InstagramPhoto';
+import { useSelector, useDispatch } from 'react-redux'
 import './PhotoJournal.css';
 
 function PhotoJournal() {
-  // const RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`;
-  
+  const dispatch = useDispatch()
+  const [photos, setPhotos] = useState('')
+  const URL = 'https://www.instagram.com/graphql/query/?query_hash=472f257a40c653c64c666ce877d59d2b&variables={%22id%22:%222695972618%22,%22first%22:12}'
+
   useEffect(() => {
+    fetch('https://cors-anywhere.herokuapp.com/' + URL)
+    .then(response => response.json())
+    .then(json => {
+      let photos = json.data.user.edge_owner_to_timeline_media.edges
+      setPhotos(photos)
+    })
   }, [])
 
   return (
-    <div id = 'photoJournalContainer'>
+    <div id = 'photoGalleryContainer'>
       
-      <div className='twoTenColumn'>
-        <div className='placeholderColumn'> </div>
-        <div className='igContainer'>
-          <div className='igPost' >
-          </div>
-          
+      <div className='columnOne'>
+        <div id='postContainer'>
+          {photos.length >= 3 ?
+           <>
+            <InstagramPhoto img={photos[0].node.display_url} />
+            <InstagramPhoto img={photos[1].node.display_url} />
+            <InstagramPhoto img={photos[2].node.display_url} />
+           </> : null
+          }
         </div>
-
       </div>
       
-      <div className='tenFourteenColumn'> </div>
+      <div className='columnTwo'>
+        <div id='postContainer'>
+        {photos.length >= 6 ?
+           <>
+            <InstagramPhoto img={photos[3].node.display_url} />
+            <InstagramPhoto img={photos[4].node.display_url} />
+            <InstagramPhoto img={photos[5].node.display_url} />
+           </> : null
+          }
+        </div>
+      </div>
       
-      <div className='fourteenEighteenColumn'> </div>
+      <div className='columnThree'>
+        <div id='postContainer'>
+        {photos.length >= 9 ?
+           <>
+            <InstagramPhoto img={photos[6].node.display_url} />
+            <InstagramPhoto img={photos[7].node.display_url} />
+            <InstagramPhoto img={photos[8].node.display_url} />
+           </> : null
+          }
+        </div>
+      </div>
     
     </div>
   )

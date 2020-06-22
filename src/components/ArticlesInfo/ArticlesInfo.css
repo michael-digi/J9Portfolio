@@ -4,6 +4,7 @@
   padding: 10%;
   grid-column: 2/3;
   font-size: 1.2vw;
+  height: 100%;
   flex-direction: column;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
