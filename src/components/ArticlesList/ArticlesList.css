@@ -1,0 +1,7 @@
+#articlesList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  grid-column: 4/9;
+  margin-top: 10%;
+}

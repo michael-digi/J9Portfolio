@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { parseXML, decodeHTMLEntitiesParagraphs } from '../helpers';
+import ArticlesSideNav from '../ArticlesSideNav';
+import { NavLink } from 'react-router-dom';
 import parse from 'html-react-parser';
 // import { useSelector, useDispatch } from 'react-redux'
 // import { useRouteMatch } from 'react-router-dom';
@@ -41,19 +43,11 @@ function Article(props) {
   return (
     <>
       <div id='articleContainer'>
-        <div id='articleTitleContainer'>
-          <div id='articleTitle'> {articleTitle} </div>
-          <div id='articleAuthorAndDate'> 
-            <div id='author'>
-              {articleAuthor 
-              ? `Posted by ${articleAuthor}` 
-              : null}
-            </div>
-            <div id='date'>
-              {articleDate}
-            </div>
-          </div>
-        </div>
+        <ArticlesSideNav 
+          articleTitle={articleTitle} 
+          articleAuthor={articleAuthor}
+          articleDate={articleDate}
+        />
         <div id='article'> {articleBody} </div>
       </div>
     </>

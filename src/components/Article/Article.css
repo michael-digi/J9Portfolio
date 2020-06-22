@@ -1,6 +1,7 @@
 #articleContainer {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  height: 100%;
 }
 
 #articleContainer img {
@@ -8,41 +9,20 @@
 }
 
 #article {
-  grid-column: 4/10;
+  grid-column: 4/9;
   margin-top: 10%;
 }
-
-#articleTitleContainer {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  grid-column: 1/3;
-  font-size: 2.5rem;
-  margin: 20% 0% 0% 20%;
-  flex-direction: column;
-}
-
-#articleTitle {
-  border-bottom: 1px solid black;
-  padding-bottom: 10%;
-}
-
-#articleAuthorAndDate {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  font-size: 1rem;
-  line-height: 25px;
-}
-
 
 figure {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 5%;
+  align-items: flex-start;
+  margin-bottom: 2.5%;
 }
 
 figure figcaption {
   margin-top: 1%;
 }
+
+
+

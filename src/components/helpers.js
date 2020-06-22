@@ -1,4 +1,6 @@
+import React from 'react';
 import _ from 'lodash'
+import ArticlesCard from './ArticlesCard';
 
 
 export function flatten(object) {
@@ -85,6 +87,27 @@ export function decodeHTMLEntitiesParagraphs(text) {
   let textArea = document.createElement('textarea');
   textArea.innerHTML = text
   return textArea.value;
+}
+
+export function makeArticleCards(articles) {
+  let cards = []
+  const months = Array("January", "February", "March", "April", "May", "June", 
+  "July", "August", "September", "October", "November", "December")
+  
+  articles.forEach(article => {
+    let description = decodeHTMLEntities(article.description)
+    let date = new Date(article.pubDate)
+    let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
+    cards.push(
+      <ArticlesCard
+        key={article.title}
+        title={article.title}
+        description={description}
+        date={pubDate}
+      />
+    )
+  })
+  return cards
 }
 
 

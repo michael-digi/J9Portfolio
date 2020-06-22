@@ -1,0 +1,51 @@
+#articleTitleContainer {
+  display: flex;
+  align-items: flex-start;
+  grid-column: 1/3;
+  font-size: 1.25rem;
+  margin: 20% 0% 0% 20%;
+  flex-direction: column;
+}
+
+#articleTitle {
+  border-bottom: 1px solid black;
+  padding-bottom: 10%;
+  margin-bottom: 0px;
+}
+
+#articleAuthorAndDate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+#categoryNavContainer {
+  font-size: 1rem;
+  margin-top: 25%;
+}
+
+#navContainerTitle {
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  /* color: gray; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  padding-left: 10%;
+  color: gray;
+}
+
+.categoryLinks {
+  text-decoration: none;
+  color: gray
+}
+
+li:hover {
+  cursor: pointer;
+}

@@ -35,7 +35,7 @@
 .post .postParagraph {
   margin-top: 2.5%;
   /* border: 1px solid black; */
-  font-size: .9rem;
+  font-size: .8rem;
   text-align: left;
   line-height: 1rem;
 }
@@ -43,6 +43,6 @@
 .post .readMore {
   text-align: right;
   margin-top: 2.5%;
-  font-size: .8rem;
+  font-size: .7rem;
   /* border: 1px solid black; */
 }

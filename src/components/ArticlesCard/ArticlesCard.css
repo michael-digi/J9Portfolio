@@ -1,0 +1,30 @@
+#articlesCard {
+  display: flex;
+  margin-top: 2.5%;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid lightgray;
+  transition: all .25s ease-in-out;
+}
+
+#articlesCard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#articlesCardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 2% 2% 0% 2%;
+}
+
+#articlesCardDate {
+  font-size: .9rem;
+  color: gray;
+  padding: 1% 2% 0% 2%;
+}
+
+#articlesCardDescription {
+  font-size: 1rem;
+  padding: 1% 2% 2% 2%;
+}
