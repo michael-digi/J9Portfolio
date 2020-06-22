@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-      <Route path='/' exact component = {MainScroll}/>
+        <Route path={process.env.PUBLIC_URL + '/'} exact component = {MainScroll}/>
         <Route path='/J9Portfolio' exact component = {MainScroll}/>
         <Route path='/articles/:type/:title' exact component = {Article}/>
         <Route path='/articles' exact component = {AllArticles}/>
