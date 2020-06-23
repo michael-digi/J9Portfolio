@@ -19,9 +19,10 @@ function Article(props) {
   useEffect(() => {
     window.scrollTo(0, 0)
     let RSS_URL;
-    (props.match.params.type) === 'design' 
-      ? RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`
-      : RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`
+    let type = props.match.params.type
+    if (type === 'design') RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`
+    if (type === 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`
+    if (type !== 'design' && type !== 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/feed`
     
       fetch('https://cors-anywhere.herokuapp.com/' + RSS_URL)
       .then(response => response.text())

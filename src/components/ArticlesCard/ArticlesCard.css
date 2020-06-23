@@ -3,6 +3,8 @@
   margin-top: 2.5%;
   flex-direction: column;
   width: 100%;
+  text-decoration: none;
+  color: black;
   /* border: 1px solid lightgray; */
   transition: all .25s ease-in-out;
 }

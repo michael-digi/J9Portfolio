@@ -89,18 +89,28 @@ export function decodeHTMLEntitiesParagraphs(text) {
   return textArea.value;
 }
 
-export function makeArticleCards(articles) {
+export function makeArticleCards(articles = []) {
   let cards = []
   const months = Array("January", "February", "March", "April", "May", "June", 
   "July", "August", "September", "October", "November", "December")
   
   articles.forEach(article => {
     let description = decodeHTMLEntities(article.description)
+    let type;
     let date = new Date(article.pubDate)
-    let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
+    let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`;
+
+    if (article.category.includes('Art Gallery')) type = 'art'
+    if (article.category.includes('Design Gallery')) type = 'design'
+    if (!article.category.includes('Art Gallery') && !article.category.includes('Design Gallery')) {
+      if (typeof article.category === 'object') type =  article.category[0]
+      else type =  article.category
+    } 
+    
     cards.push(
       <ArticlesCard
         key={article.title}
+        type={type}
         title={article.title}
         description={description}
         date={pubDate}
