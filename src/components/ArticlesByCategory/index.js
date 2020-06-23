@@ -12,19 +12,25 @@ function ArticlesByCategory(props) {
   useEffect(() => {
     window.scrollTo(0, 0)
     let RSS_URL;
-    let type = props.match.params.type
-    console.log(type, ' this is type')
+    let type = props.match.params.type.toLowerCase()
     if (type === 'design') RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`
     if (type === 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`
-    if (type !== 'design' && type !== 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/category/${type}/feed`
-    console.log(RSS_URL, ' this is url')
+    if (type === 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/feed`
+    if (type !== 'design' && type !== 'art' && type !== 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/category/${type}/feed`
 
     fetch('https://cors-anywhere.herokuapp.com/' + RSS_URL)
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => parseXML(data))
       .then(parsed => {
-        setTitle(parsed.channel.title)
+        if (parsed.channel.title.split(/\u2013|\u2014/g).length > 1) {
+          let title = parsed.channel.title.split(/\u2013|\u2014/g)[1].trim()
+          title = title + ' of ' + type[0].toUpperCase() + type.slice(1, type.length)
+          setTitle(title)
+        }
+        else {
+          setTitle(parsed.channel.title)
+        }
         setArticles(parsed.channel.item)
   })
 }, [props.match.params.type])

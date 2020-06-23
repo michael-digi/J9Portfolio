@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Post from '../Post';
+import SeeMorePosts from '../SeeMorePosts';
 import { setArtArticles } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux'
 import { parseXML } from '../helpers';
@@ -33,7 +34,7 @@ function ArtGallery() {
             paragraph={articles[0].description} />
           : null }
           
-          {articles.length >=2 ?
+          {articles.length >= 2 ?
           <Post 
             type={'art'}
             key={articles[1].title}
@@ -54,14 +55,8 @@ function ArtGallery() {
             title={articles[2].title}
             paragraph={articles[2].description} />
           : null }
-        
-        </div>
-      </div>
-      
-      <div className='tenFourteenColumn'>
-        <div id='postContainer'>
           
-        {articles.length >= 4 ?
+          {articles.length >= 4 ?
           <Post 
             type={'art'}
             key={articles[3].title}
@@ -71,6 +66,13 @@ function ArtGallery() {
             title={articles[3].title}
             paragraph={articles[3].description} />
           : null }
+        
+        </div>
+      </div>
+      
+      <div className='tenFourteenColumn'>
+        <div id='postContainer'>
+          
           
           {articles.length >= 5 ?
           <Post 
@@ -94,13 +96,7 @@ function ArtGallery() {
             paragraph={articles[5].description} />
           : null }
           
-        </div>
-      </div>
-      
-      <div className='fourteenEighteenColumn'>
-        <div id='postContainer'>
-          
-        {articles.length >= 7 ?
+          {articles.length >= 7 ?
           <Post 
             type={'art'}
             key={articles[6].title}
@@ -111,7 +107,7 @@ function ArtGallery() {
             paragraph={articles[6].description} />
           : null }
           
-        {articles.length >= 8 ?
+          {articles.length >= 8 ?
           <Post
             type={'art'}
             key={articles[7].title}
@@ -121,7 +117,13 @@ function ArtGallery() {
             title={articles[7].title}
             paragraph={articles[7].description} />
           : null }
-        
+          
+        </div>
+      </div>
+      
+      <div className='fourteenEighteenColumn'>
+        <div id='postContainer'>
+          
         {articles.length >= 9 ?
           <Post 
             type={'art'}
@@ -132,6 +134,8 @@ function ArtGallery() {
             title={articles[8].title}
             paragraph={articles[8].description} />
           : null }
+        
+        <SeeMorePosts type='Art'/>
         
         </div>
       </div>

@@ -3,6 +3,7 @@ import { setDesignArticles } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux'
 import { parseXML } from '../helpers';
 import Post from '../Post';
+import SeeMorePosts from '../SeeMorePosts';
 import './DesignGallery.css';
 
 function DesignGallery() {
@@ -64,14 +65,8 @@ function DesignGallery() {
             // content={articles[2]['content:encoded']} 
           />
           : null }
-        
-        </div>
-      </div>
-      
-      <div className='tenFourteenColumn'>
-        <div id='postContainer'>
           
-        {articles.length >= 4 ?
+          {articles.length >= 4 ?
           <Post 
             type={'design'}
             key={articles[3].title}
@@ -83,6 +78,12 @@ function DesignGallery() {
             // content={articles[3]['content:encoded']} 
           />
           : null }
+        
+        </div>
+      </div>
+      
+      <div className='tenFourteenColumn'>
+        <div id='postContainer'>
           
           {articles.length >= 5 ?
           <Post 
@@ -110,13 +111,7 @@ function DesignGallery() {
           />
           : null }
           
-        </div>
-      </div>
-      
-      <div className='fourteenEighteenColumn'>
-        <div id='postContainer'>
-          
-        {articles.length >= 7 ?
+          {articles.length >= 7 ?
           <Post 
             type={'design'}
             key={articles[6].title}
@@ -129,6 +124,12 @@ function DesignGallery() {
           />
           : null }
           
+        </div>
+      </div>
+      
+      <div className='fourteenEighteenColumn'>
+        <div id='postContainer'>
+            
         {articles.length >= 8 ?
           <Post 
             type={'design'}
@@ -141,6 +142,8 @@ function DesignGallery() {
             // content={articles[7]['content:encoded']} 
           />
           : null }
+          
+          <SeeMorePosts type='Design'/>
         
         </div>
       </div>
