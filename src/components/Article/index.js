@@ -14,7 +14,7 @@ function Article(props) {
   const [articleAuthor, setArticleAuthor] = useState('')
   const [articleDate, setArticleDate] = useState('')
   // const [articleImage, setArticleImage] = useState('')
-  const months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   
   useEffect(() => {
     window.scrollTo(0, 0)

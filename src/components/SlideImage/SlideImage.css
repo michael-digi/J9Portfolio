@@ -9,6 +9,7 @@
 .item img {
   z-index: 4;
   height: 100%;
+  min-width: 45%;
   max-width: 90%;
   justify-self: center;
   align-self: center;

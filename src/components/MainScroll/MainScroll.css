@@ -1,0 +1,49 @@
+#sidebar {
+  display: flex;
+  text-align: center;
+  width:100vh;
+  position: fixed;
+  left: 0;
+  transform-origin: left top;
+  transform:rotate(-90deg) translateX(-100%);
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.element {
+  height: 100%;
+}
+
+.navTab {
+  width: 20%;
+  max-height: 45px;
+  /* font-family: 'Comfortaa'; */
+  font-size: .9rem;
+  /* font-weight: bold; */
+  line-height: 45px;
+  /* border-right: 1px solid lightgray; */
+  letter-spacing: 1px;
+  transition: ease-in-out .25s;
+  color: black;
+  overflow: hidden;
+}
+
+.navTab:hover {
+  background-color: #f7f3a9;
+  cursor: pointer;
+  color: black;
+}
+
+.navTab.active {
+  background-color: #f7f3a9;
+  cursor: pointer;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #sidebar {
+    display: none;
+  }
+}
