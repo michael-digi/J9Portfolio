@@ -4,7 +4,7 @@ import './ProjectPreviewScroll.css';
 
 function ProjectPreviewScroll(props) {
   return (
-    <div id='projectArea'>
+    <div id='projectScroll'>
       <ProjectCard 
         title='Fort Greene' 
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

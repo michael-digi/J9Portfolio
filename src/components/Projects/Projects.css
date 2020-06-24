@@ -1,10 +1,17 @@
-#projectContainer {
+#projects {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   background-color: white;
   /* min-width: 950px; */
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #projects {
+    margin-top: 10%;
+  }
 }
 
 #leftClickDiv {
@@ -38,7 +45,7 @@
   position: relative;
   align-items: center;
   grid-column: 3/6;
-  grid-row: 1/4;
+  grid-row: 1/6;
   -webkit-animation: fadein ease-in .75s ; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
         -ms-animation: fadeIn ease 1s; /* Internet Explorer */
@@ -46,6 +53,18 @@
             animation: fadein ease-in .75s ;
 }
 
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #slideShow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    grid-column: 1/6;
+    grid-row: 1/4;
+  }
+}
 
 @keyframes fadein {
   from { opacity: 0; }

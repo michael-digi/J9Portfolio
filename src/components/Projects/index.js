@@ -93,7 +93,7 @@ function Projects() {
   }
 
   return (
-    <div id='projectContainer'>
+    <div id='projects'>
       
       <ProjectPreviewScroll changeProject={changeProject} />
       

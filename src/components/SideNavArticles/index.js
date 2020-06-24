@@ -8,7 +8,7 @@ function SideNavArticles() {
     <div id='sidebar'>
       <Link className='navTab' to='/articles/design'>Design Gallery</Link>
       <Link className='navTab' to='/articles/art'>Art Gallery</Link>
-      <Link className='navTab' to='/articles/all'>All Articles</Link>
+      <Link className='navTab' to='/articles/all'>All Content</Link>
       <Link className='navTab' to='/'>j1989</Link>
       {/* <Link className='navTab' to='projects'>Projects</Link> */}
     </div>

@@ -1,13 +1,24 @@
-#projectArea {
+#projectScroll {
   grid-column: 2/3;
-  grid-row: 1/7;
-  overflow: auto;
+  grid-row: 1/6;
   border-right: 1px solid lightgray;
   overflow-y: auto;
   scrollbar-width: none;
 }
 
-#projectArea::-webkit-scrollbar { width: 0 !important }
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #projectScroll {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/6;
+    grid-row: 4/6;
+    margin: 10% 5% 0% 5%;
+    border: none;
+  }
+}
+
+#projectScroll::-webkit-scrollbar { width: 0 !important }
 
 .thumbnail#queensboro {
   background-image: url('../images/Queensboro/thumbnail/Queensboro_thumbnail-min.jpg');
