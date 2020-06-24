@@ -40,11 +40,11 @@ function MainScroll() {
     <>
       {/* <SideNav /> */}
       <div id='sidebar'>
-        <Link className='navTab' activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={2000}>Contact</Link>
-        <Link className='navTab' activeClass='active' to='design' spy={true} smooth={true} offset={0} duration={2000}>Design Gallery</Link>
-        <Link className='navTab' activeClass='active' to='art' spy={true} smooth={true} offset={0} duration={2000}>Art Gallery</Link>
-        <Link className='navTab' activeClass='active' to='photos' spy={true} smooth={true} offset={0} duration={2000}>Photo Journal</Link>
-        <Link className='navTab' activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={2000}>Projects</Link>
+        <Link className='navTab' activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={1000}>Contact</Link>
+        <Link className='navTab' activeClass='active' to='design' spy={true} smooth={true} offset={0} duration={1000}>Design Gallery</Link>
+        <Link className='navTab' activeClass='active' to='art' spy={true} smooth={true} offset={0} duration={1000}>Art Gallery</Link>
+        <Link className='navTab' activeClass='active' to='photos' spy={true} smooth={true} offset={0} duration={1000}>Photo Journal</Link>
+        <Link className='navTab' activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={1000}>Projects</Link>
       </div>
       <Element name='projects' className='element'>
         <Projects />
