@@ -8,3 +8,10 @@
   width: 15%;
   margin-top: 2%;
 }
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  #dots  {
+    display: none;
+  }
+}
