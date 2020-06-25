@@ -37,8 +37,18 @@
 @media (max-width: 768px) {
   /* For mobile phones: */
   .elementArt {
-    
-    /* max-height: 80vh; */
+    /* display: flex;
+    align-content: center; */
+    max-height: 75vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For mobile phones: */
+  .elementArt {
+    /* display: flex;
+    align-content: center; */
+    max-height: 75vh;
   }
 }
 
