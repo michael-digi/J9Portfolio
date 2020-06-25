@@ -15,7 +15,17 @@
 }
 
 .elementPhotoJournal {
-  height: 100%;
+  max-height: 100%;
+}
+
+.elementDesign {
+  margin-top: 25%;
+  max-height: 100%;
+}
+
+.elementArt {
+  margin-top: 25%;
+  max-height: 100%;
 }
 
 @media (max-width: 768px) {

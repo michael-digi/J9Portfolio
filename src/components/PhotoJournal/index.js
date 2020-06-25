@@ -25,7 +25,6 @@ function PhotoJournal() {
         <div id='postContainer'>
           {photos.length >= 3 ?
            <>
-            <SectionTitleMobile />
             <InstagramPhoto img={photos[0].node.display_url} />
             <InstagramPhoto img={photos[1].node.display_url} />
             <InstagramPhoto img={photos[2].node.display_url} />
@@ -62,7 +61,7 @@ function PhotoJournal() {
         <div id='postContainer'>
           {photos.length >= 3 ?
            <>
-            <SectionTitleMobile />
+            <SectionTitleMobile section={'Photo Journal'} />
             <InstagramPhoto img={photos[0].node.display_url} />
             <InstagramPhoto img={photos[1].node.display_url} />
             <InstagramPhoto img={photos[2].node.display_url} />

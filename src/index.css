@@ -4,6 +4,13 @@ html, body, #root {
   /* font-family: 'Calibri'; */
 }
 
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  html, body, #root {
+    min-height: 100%;
+  }
+}
+
 body {
   margin: 0;
 }

@@ -3,6 +3,14 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .post {
+    width: 100vw;
+  }
+}
+
+
 .post:hover {
   cursor: pointer;
 }

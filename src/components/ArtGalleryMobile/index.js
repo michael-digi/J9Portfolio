@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Post from '../Post';
 import SeeMorePosts from '../SeeMorePosts';
-import ArtGalleryMobile from '../ArtGalleryMobile';
+import SectionTitleMobile from '../SectionTitleMobile';
 import { setArtArticles } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux'
 import { parseXML } from '../helpers';
@@ -21,11 +21,10 @@ function ArtGallery() {
   }, [])
 
   return (
-    <>
-    <ArtGalleryMobile />
-    <div id = 'designGalleryContainer'>
+    <div id = 'designGalleryContainerMobile'>
       <div className='twoTenColumn'>
         <div id='postContainer'>
+          <SectionTitleMobile section={'Art Gallery'} />
           {articles.length >= 1 ?
           <Post
             type={'art'}
@@ -69,14 +68,7 @@ function ArtGallery() {
             title={articles[3].title}
             paragraph={articles[3].description} />
           : null }
-        
-        </div>
-      </div>
-      
-      <div className='tenFourteenColumn'>
-        <div id='postContainer'>
-          
-          
+              
           {articles.length >= 5 ?
           <Post 
             type={'art'}
@@ -120,13 +112,7 @@ function ArtGallery() {
             title={articles[7].title}
             paragraph={articles[7].description} />
           : null }
-          
-        </div>
-      </div>
-      
-      <div className='fourteenEighteenColumn'>
-        <div id='postContainer'>
-          
+
         {articles.length >= 9 ?
           <Post 
             type={'art'}
@@ -144,7 +130,6 @@ function ArtGallery() {
       </div>
     
     </div>
-  </>
   )
 }
 

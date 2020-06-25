@@ -3,6 +3,7 @@ import { setDesignArticles } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux'
 import { parseXML } from '../helpers';
 import Post from '../Post';
+import DesignGalleryMobile from '../DesignGalleryMobile'
 import SeeMorePosts from '../SeeMorePosts';
 import './DesignGallery.css';
 
@@ -23,6 +24,8 @@ function DesignGallery() {
   }, [])
 
   return (
+    <>
+    <DesignGalleryMobile />
     <div id = 'designGalleryContainer'>
       <div className='twoTenColumn'>
 
@@ -149,6 +152,7 @@ function DesignGallery() {
       </div>
     
     </div>
+    </>
   )
 }
 
