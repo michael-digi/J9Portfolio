@@ -1,6 +1,6 @@
 #designGalleryContainer {
   display: grid;
-  height: 100vh;
+  height: 100%;
   /* border: 1px solid black; */
   /* border-top: 1px solid lightgray; */
   grid-template-columns: repeat(5, 1fr);

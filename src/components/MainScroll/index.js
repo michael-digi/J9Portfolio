@@ -57,18 +57,17 @@ function MainScroll() {
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
+        <Element name='art' className='elementArt'>
+          <ArtGallery />
+        </Element>
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
         <Element name='design' className="elementDesign">
           <DesignGallery />
         </Element>
       </Suspense>
 
-      <Suspense fallback={<div>Loading...</div>}>
-        <Element name='art' className='elementArt'>
-          <ArtGallery />
-        </Element>
-      </Suspense>
-      
-      
       <Suspense fallback={<div>Loading...</div>}>
         <Element name='contact' className='element'>
           <ContactSection />

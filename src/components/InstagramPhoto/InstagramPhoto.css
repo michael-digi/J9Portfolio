@@ -18,9 +18,11 @@
 @media (max-width: 768px) {
   /* For mobile phones: */
   .instagramPhoto {
-    display: block;
-    min-height: 100%;
-    min-width: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    min-height: 50%;
+    min-width: 90%;
     margin: 0% 5% 0% 0%;
   }
 }

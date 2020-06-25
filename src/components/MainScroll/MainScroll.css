@@ -15,24 +15,38 @@
 }
 
 .elementPhotoJournal {
-  max-height: 100%;
+  height: 100%;
 }
 
 .elementDesign {
-  margin-top: 25%;
-  max-height: 100%;
+  height: 100%;
 }
 
 .elementArt {
-  margin-top: 25%;
-  max-height: 100%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
   /* For mobile phones: */
   .elementPhotoJournal {
-    margin-top: 20%;
-    height: 60%;
+    
+    /* max-height: 80vh; */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .elementArt {
+    
+    /* max-height: 80vh; */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .elementDesign {
+    
+    /* max-height: 80vh; */
   }
 }
 
