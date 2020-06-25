@@ -19,8 +19,8 @@
   /* For mobile phones: */
   .instagramPhoto {
     display: block;
-    height: 30vh;
-    min-width: 50%;
+    min-height: 100%;
+    min-width: 75%;
     margin: 0% 5% 0% 0%;
   }
 }

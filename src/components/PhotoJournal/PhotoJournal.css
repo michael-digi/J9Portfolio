@@ -151,6 +151,7 @@
     grid-row: 1/6;
     padding-top: 0%;
     overflow-x: auto;
+    height: 100%;
     margin: 0% 5% 0% 5%;
     width: 100%;
   }
