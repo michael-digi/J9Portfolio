@@ -29,12 +29,6 @@ function PhotoJournal() {
             <InstagramPhoto img={photos[0].node.display_url} />
             <InstagramPhoto img={photos[1].node.display_url} />
             <InstagramPhoto img={photos[2].node.display_url} />
-            <InstagramPhoto img={photos[3].node.display_url} />
-            <InstagramPhoto img={photos[4].node.display_url} />
-            <InstagramPhoto img={photos[5].node.display_url} />
-            <InstagramPhoto img={photos[6].node.display_url} />
-            <InstagramPhoto img={photos[7].node.display_url} />
-            <InstagramPhoto img={photos[8].node.display_url} />
            </> : null
           }
         </div>

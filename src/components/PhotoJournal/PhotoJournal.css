@@ -127,6 +127,10 @@
   width: 100%;
 }
 
+#photoGalleryContainer .columnOneMobile  {
+  display: none;
+}
+
 @media (max-width: 768px) {
   /* For mobile phones: */
   #photoGalleryContainer .columnOneMobile  {
