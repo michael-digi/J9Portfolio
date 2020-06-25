@@ -14,6 +14,18 @@
   height: 100%;
 }
 
+.elementPhotoJournal {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .elementPhotoJournal {
+    margin-top: 20%;
+    height: 40%;
+  }
+}
+
 .navTab {
   width: 20%;
   max-height: 45px;

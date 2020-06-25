@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import InstagramPhoto from '../InstagramPhoto';
+import SectionTitleMobile from '../SectionTitleMobile';
 import { useSelector, useDispatch } from 'react-redux'
 import './PhotoJournal.css';
 
@@ -24,9 +25,16 @@ function PhotoJournal() {
         <div id='postContainer'>
           {photos.length >= 3 ?
            <>
+            <SectionTitleMobile />
             <InstagramPhoto img={photos[0].node.display_url} />
             <InstagramPhoto img={photos[1].node.display_url} />
             <InstagramPhoto img={photos[2].node.display_url} />
+            <InstagramPhoto img={photos[3].node.display_url} />
+            <InstagramPhoto img={photos[4].node.display_url} />
+            <InstagramPhoto img={photos[5].node.display_url} />
+            <InstagramPhoto img={photos[6].node.display_url} />
+            <InstagramPhoto img={photos[7].node.display_url} />
+            <InstagramPhoto img={photos[8].node.display_url} />
            </> : null
           }
         </div>
@@ -48,6 +56,25 @@ function PhotoJournal() {
         <div id='postContainer'>
         {photos.length >= 9 ?
            <>
+            <InstagramPhoto img={photos[6].node.display_url} />
+            <InstagramPhoto img={photos[7].node.display_url} />
+            <InstagramPhoto img={photos[8].node.display_url} />
+           </> : null
+          }
+        </div>
+      </div>
+
+      <div className='columnOneMobile'>
+        <div id='postContainer'>
+          {photos.length >= 3 ?
+           <>
+            <SectionTitleMobile />
+            <InstagramPhoto img={photos[0].node.display_url} />
+            <InstagramPhoto img={photos[1].node.display_url} />
+            <InstagramPhoto img={photos[2].node.display_url} />
+            <InstagramPhoto img={photos[3].node.display_url} />
+            <InstagramPhoto img={photos[4].node.display_url} />
+            <InstagramPhoto img={photos[5].node.display_url} />
             <InstagramPhoto img={photos[6].node.display_url} />
             <InstagramPhoto img={photos[7].node.display_url} />
             <InstagramPhoto img={photos[8].node.display_url} />

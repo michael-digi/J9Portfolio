@@ -27,7 +27,7 @@
   .thumbnailContainer {
     width: 45vw;
     border: none;
-    /* margin-right: 10%; */
+    padding-right: 10%;
   }
 }
 
@@ -89,7 +89,6 @@
   text-align: justify;
   margin-top: 2.5%;
   color: gray;
-  
 }
 
 .projectTitle {

@@ -51,7 +51,7 @@ function MainScroll() {
       </Element>
       
       <Suspense fallback={<div>Loading...</div>}>
-        <Element name='photos' className='element'>
+        <Element name='photos' className='elementPhotoJournal'>
           <PhotoJournal />
         </Element>
       </Suspense>
