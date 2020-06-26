@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3570260c8e38831c9f619b4f6d07044",
+    "revision": "3261cf86add9d6c72724e985aa4ca604",
     "url": "/janineteeneightynine/index.html"
   },
   {
-    "revision": "edab93acc05e3f6dd0c4",
+    "revision": "8a8666be32d58c60c37b",
     "url": "/janineteeneightynine/static/css/3.f0768b93.chunk.css"
   },
   {
-    "revision": "9bb7e5b3424dda29a5c7",
+    "revision": "570b52d20e06e9346f01",
     "url": "/janineteeneightynine/static/css/4.47bd2306.chunk.css"
   },
   {
-    "revision": "1fcb998b1f22415e119a",
+    "revision": "ff2820547673c6ea1896",
     "url": "/janineteeneightynine/static/css/5.f06af6ee.chunk.css"
   },
   {
@@ -20,40 +20,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/css/6.4ed51c4b.chunk.css"
   },
   {
-    "revision": "ef172a558d01d967d831",
-    "url": "/janineteeneightynine/static/css/main.38b786a7.chunk.css"
+    "revision": "532eda5844026558f0c9",
+    "url": "/janineteeneightynine/static/css/main.f385e218.chunk.css"
   },
   {
-    "revision": "4a37a5a748446d416fd8",
-    "url": "/janineteeneightynine/static/js/2.3d44a896.chunk.js"
+    "revision": "2f388a366758ae80cb13",
+    "url": "/janineteeneightynine/static/js/2.5223597b.chunk.js"
   },
   {
     "revision": "5d108d2565ae5da6b5edf10c2a38fd97",
-    "url": "/janineteeneightynine/static/js/2.3d44a896.chunk.js.LICENSE.txt"
+    "url": "/janineteeneightynine/static/js/2.5223597b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edab93acc05e3f6dd0c4",
-    "url": "/janineteeneightynine/static/js/3.cb32f9de.chunk.js"
+    "revision": "8a8666be32d58c60c37b",
+    "url": "/janineteeneightynine/static/js/3.982991af.chunk.js"
   },
   {
-    "revision": "9bb7e5b3424dda29a5c7",
-    "url": "/janineteeneightynine/static/js/4.55d03659.chunk.js"
+    "revision": "570b52d20e06e9346f01",
+    "url": "/janineteeneightynine/static/js/4.8c46a9bd.chunk.js"
   },
   {
-    "revision": "1fcb998b1f22415e119a",
-    "url": "/janineteeneightynine/static/js/5.a904075d.chunk.js"
+    "revision": "ff2820547673c6ea1896",
+    "url": "/janineteeneightynine/static/js/5.7e1af05d.chunk.js"
   },
   {
     "revision": "dfdca63d7985430dbba1",
     "url": "/janineteeneightynine/static/js/6.407a91ba.chunk.js"
   },
   {
-    "revision": "ef172a558d01d967d831",
-    "url": "/janineteeneightynine/static/js/main.1c86672e.chunk.js"
+    "revision": "532eda5844026558f0c9",
+    "url": "/janineteeneightynine/static/js/main.34e47331.chunk.js"
   },
   {
-    "revision": "abfd7b8273446f71c07f",
-    "url": "/janineteeneightynine/static/js/runtime-main.fc4106a0.js"
+    "revision": "08ad7e2f2f2432704cb4",
+    "url": "/janineteeneightynine/static/js/runtime-main.d6930aad.js"
   },
   {
     "revision": "062ca6dc5a56bd5723759498e8bfd494",
