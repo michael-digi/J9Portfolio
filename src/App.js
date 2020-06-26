@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import MainScroll from './components/MainScroll';
 import Article from './components/Article';
 import AllArticles from './components/AllArticles';
@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Switch>
         <Route path='/' exact component = {MainScroll}/>
         <Route path='/janineteeneightynine' exact component = {MainScroll}/>
@@ -16,7 +16,7 @@ function App() {
         <Route path='/articles' exact component = {AllArticles}/>
         <Route path='/articles/:type' exact component = {ArticlesByCategory}/>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
