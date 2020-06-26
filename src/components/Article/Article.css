@@ -21,6 +21,12 @@
 }
 
 @media (max-width: 768px) {
+  #articleContainer img {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
   #articleContainer {
     max-height: 100%;
   }
@@ -49,5 +55,19 @@ figure figcaption {
 #prevAndNext {
   display: flex;
   justify-content: space-between;
-  margin: 10% 0% 10% 0%;
+  margin: 10%;
+}
+
+#prevAndNext .fa {
+  opacity: .6;
+}
+
+#prevArticle {
+  text-decoration: none;
+  color: black;
+}
+
+#nextArticle {
+  text-decoration: none;
+  color: black;
 }

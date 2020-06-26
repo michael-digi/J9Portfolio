@@ -83,8 +83,30 @@ function Article(props) {
         />
         <div id='article'> {articleBody}
           <div id='prevAndNext'>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> Previous Article</NavLink>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${nextTitle}`} id='nextArticle'> Next Article</NavLink>
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> 
+              <i className='fa fa-angle-left' 
+                style={{
+                  zIndex: 1, 
+                  textAlign:'center', 
+                  fontSize: '2.5rem',
+                  width: '1%',
+                  minWidth: '20px', 
+                  borderRadius: '25%', 
+                  color: 'gray'}}>
+              </i>
+            </NavLink>
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${nextTitle}`} id='nextArticle'>
+              <i className='fa fa-angle-right' 
+                style={{
+                  zIndex: 1, 
+                  textAlign:'center', 
+                  fontSize: '2.5rem',
+                  width: '1%',
+                  minWidth: '20px', 
+                  borderRadius: '25%', 
+                  color: 'gray'}}>
+              </i>
+            </NavLink>
           </div>
         </div>
       </div>

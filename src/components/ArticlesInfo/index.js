@@ -8,13 +8,6 @@ function ArticlesInfo(props) {
   return (
     <>
         <div id='articleTitleContainer'>
-          {/* <div id='articlesImage' 
-            style={{
-              backgroundImage: `url(${props.articleImage})`, 
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '20%',
-              width: '100%'}}/> */}
           <h1 id='articleTitle'> {props.articleTitle} </h1>
           <div id='articleAuthorAndDate'> 
             <div id='author'>
