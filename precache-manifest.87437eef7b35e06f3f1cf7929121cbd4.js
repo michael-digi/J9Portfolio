@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3261cf86add9d6c72724e985aa4ca604",
+    "revision": "25d4070c17ca1268b05f31136b0d754f",
     "url": "/janineteeneightynine/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/css/6.4ed51c4b.chunk.css"
   },
   {
-    "revision": "532eda5844026558f0c9",
-    "url": "/janineteeneightynine/static/css/main.f385e218.chunk.css"
+    "revision": "e437975b49a2b37b522d",
+    "url": "/janineteeneightynine/static/css/main.a919989a.chunk.css"
   },
   {
     "revision": "2f388a366758ae80cb13",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/js/6.407a91ba.chunk.js"
   },
   {
-    "revision": "532eda5844026558f0c9",
-    "url": "/janineteeneightynine/static/js/main.34e47331.chunk.js"
+    "revision": "e437975b49a2b37b522d",
+    "url": "/janineteeneightynine/static/js/main.a2350450.chunk.js"
   },
   {
     "revision": "08ad7e2f2f2432704cb4",
