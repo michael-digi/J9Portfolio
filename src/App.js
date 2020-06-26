@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path='/' exact component = {MainScroll}/>
-        <Route path='/J9Portfolio' exact component = {MainScroll}/>
+        <Route path='/janineteeneightynine' exact component = {MainScroll}/>
         <Route path='/articles/:type/:title' exact component = {Article}/>
         <Route path='/articles' exact component = {AllArticles}/>
         <Route path='/articles/:type' exact component = {ArticlesByCategory}/>

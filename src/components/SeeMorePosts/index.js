@@ -1,11 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useRouteMatch } from 'react-router-dom';
 import './SeeMorePosts.css';
 
 function SeeMorePosts(props) {
+  let { path, url } = useRouteMatch()
+  console.log(path, url)
   return (
-    <NavLink to={`/articles/${props.type.toLowerCase()}/`} className='post' >
-      <div className='postTitle'> <b> See More {props.type} Content . . . </b>  </div>
+    <NavLink to={`/articles/${props.type.toLowerCase()}/`} className='post' id='seeMore' >
+      <div className='postTitle'> <b> Click For More {props.type} Content . . . </b>  </div>
     </NavLink>
   )
 }

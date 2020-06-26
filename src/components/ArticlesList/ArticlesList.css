@@ -4,3 +4,10 @@
   grid-column: 3/6;
   margin: 10%;
 }
+
+@media (max-width: 768px) {
+  #articlesList {
+    grid-column: 1/6;
+    margin-top: 5%;
+  }
+}

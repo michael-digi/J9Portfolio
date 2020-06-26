@@ -1,0 +1,10 @@
+#seeMore {
+  min-height: 100%;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  #seeMore .postTitle {
+    font-size: 1.75rem;
+  }
+}

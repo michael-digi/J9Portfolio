@@ -10,11 +10,33 @@
   border-right: 1px solid lightgray;
 }
 
+@media (max-width: 768px) {
+  #articleTitleContainer {
+    display: flex;
+    grid-column: 1/6;
+    /* align-items: center; */
+    /* text-align: justify; */
+    border: none;
+    padding: 0px;
+    margin: 10% 10% 0% 10%;
+  }
+}
+
 #articleTitle {
   border-bottom: 1px solid black;
   padding-bottom: 10%;
   margin-bottom: 0px;
   max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  #articleTitle {
+    display: flex;
+    padding-bottom: 0%;
+    max-width: 100%;
+    border: none;
+    font-size: 1.75rem;
+  }
 }
 
 #articleAuthorAndDate {
@@ -23,6 +45,12 @@
   margin-top: 5%;
   font-size: 1rem;
   line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  #articleAuthorAndDate {
+    margin-top: 2.5%;
+  }
 }
 
 #categoryNavContainer {

@@ -13,6 +13,19 @@
   margin: 5% 11% 5% 11%;
 }
 
+@media (max-width: 768px) {
+  #article {
+    grid-column: 1/6;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  #articleContainer {
+    max-height: 100%;
+  }
+}
+
 figure {
   display: flex;
   flex-direction: column;
@@ -20,9 +33,21 @@ figure {
   margin-bottom: 2.5%;
 }
 
+@media (max-width: 768px) {
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5%;
+  }
+}
+
 figure figcaption {
   margin-top: 1%;
 }
 
-
-
+#prevAndNext {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0% 10% 0%;
+}
