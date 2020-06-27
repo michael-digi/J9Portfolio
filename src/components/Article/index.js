@@ -11,6 +11,14 @@ import './Article.css';
 import { indexOf } from 'lodash';
 
 function Article(props) {
+  const [articleData, setArticleData] = useState({
+    articleBody: [],
+    articleTitle: '',
+    articleAuthor: '',
+    articleDate: '',
+    nextTitle: '',
+    prevTitle: ''
+  })
   const [articleBody, setArticleBody] = useState([])
   const [articleTitle, setArticleTitle] = useState('')
   const [articleAuthor, setArticleAuthor] = useState('')
@@ -51,22 +59,18 @@ function Article(props) {
               indexNext = indexCurrent + 1;
               indexPrev = indexCurrent - 1
             }
-            // let img;
-            console.log(indexPrev, indexCurrent, indexNext)
             let date = new Date(item.pubDate)
             let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
             let decoded = parse(decodeHTMLEntitiesParagraphs(item['content:encoded']))
-            // {item['media:content'][1] !== undefined 
-            // ? img = item['media:content'][1]
-            // : img = item['media:content'][0]}
-            // console.log(img.url)
-            setPrevTitle(parsed.channel.item[indexPrev].title)
-            setNextTitle(parsed.channel.item[indexNext].title)
-            setArticleBody(decoded)
-            setArticleTitle(item.title)
-            setArticleAuthor(item['dc:creator'])
-            setArticleDate(pubDate)
-            // setArticleImage(img.url)
+            let articleData = {
+              articleBody: decoded,
+              articleTitle: item.title,
+              articleAuthor: item['dc:creator'],
+              articleDate: pubDate,
+              nextTitle: parsed.channel.item[indexNext].title,
+              prevTitle: parsed.channel.item[indexPrev].title
+            }
+            setArticleData(articleData)
           }
         })
     })
@@ -78,14 +82,14 @@ function Article(props) {
       <SideNavArticles type={props.match.params.type.toLowerCase()} />
       <div id='articleContainer'>
         <ArticlesInfo 
-          articleTitle={articleTitle} 
-          articleAuthor={articleAuthor}
-          articleDate={articleDate}
+          articleTitle={articleData.articleTitle} 
+          articleAuthor={articleData.articleAuthor}
+          articleDate={articleData.articleDate}
           // articleImage={articleImage}
         />
-        <div id='article'> {articleBody}
+        <div id='article'> {articleData.articleBody}
           {/* <div id='prevAndNextMobile'> */}
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${nextTitle}`} id='nextArticleMobile'> 
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${articleData.nextTitle}`} id='nextArticleMobile'> 
               <i className='fa fa-angle-right'  
                 style={{
                   zIndex: 1, 
@@ -100,7 +104,7 @@ function Article(props) {
                   borderRadius: '25%', 
                   color: 'gray'}}></i>
             </NavLink>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticleMobile'> 
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${articleData.prevTitle}`} id='prevArticleMobile'> 
               <i className='fa fa-angle-left' 
                 style={{
                   zIndex: 1, 
@@ -117,7 +121,7 @@ function Article(props) {
             </NavLink>
           {/* </div> */}
           <div id='prevAndNext'>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> 
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${articleData.prevTitle}`} id='prevArticle'> 
               <i className='fa fa-angle-left' 
                 style={{
                   zIndex: 1, 
@@ -129,7 +133,7 @@ function Article(props) {
                   color: 'gray'}}>
               </i>
             </NavLink>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${nextTitle}`} id='nextArticle'>
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${articleData.nextTitle}`} id='nextArticle'>
               <i className='fa fa-angle-right' 
                 style={{
                   zIndex: 1, 

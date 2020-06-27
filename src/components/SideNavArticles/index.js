@@ -16,6 +16,7 @@ function SideNavArticles(props) {
     if (type === 'art') newState = {design: 'navTab', art: 'navTabActive', all: 'navTab'}
     if (type === 'design') newState = {design: 'navTabActive', art: 'navTab', all: 'navTab'}
     if (type === 'all') newState = {design: 'navTab', art: 'navTab', all: 'navTabActive'}
+    if (type !== 'all' && type !== 'art' && type !== 'design') newState = {design: 'navTab', art: 'navTab', all: 'navTabActive'}
     setStyles(newState)
   }, [props.type])
   
