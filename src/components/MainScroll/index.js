@@ -29,7 +29,7 @@ function MainScroll() {
       if (px === '0px') return
       let currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos, prevScrollpos)
-      if (prevScrollpos > currentScrollPos || currentScrollPos === '0') {
+      if (prevScrollpos > currentScrollPos || currentScrollPos <= '100') {
       // setScrollClass('navMobile')
       document.getElementById('navMobile').style.top = '0'
       } else {
