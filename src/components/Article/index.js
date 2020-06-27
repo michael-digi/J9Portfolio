@@ -82,6 +82,38 @@ function Article(props) {
           // articleImage={articleImage}
         />
         <div id='article'> {articleBody}
+          {/* <div id='prevAndNextMobile'> */}
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='nextArticle'> 
+              <i className='fa fa-angle-right'  
+                style={{
+                  zIndex: 1, 
+                  textAlign:'center', 
+                  // backgroundColor: 'black', 
+                  position: 'fixed', 
+                  top: '50%',
+                  left: '90vw',
+                  fontSize: '2.5rem',
+                  width: '1%',
+                  minWidth: '20px', 
+                  borderRadius: '25%', 
+                  color: 'gray'}}></i>
+            </NavLink>
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> 
+              <i className='fa fa-angle-left' 
+                style={{
+                  zIndex: 1, 
+                  textAlign:'center', 
+                  // backgroundColor: 'black', 
+                  position: 'fixed',
+                  fontSize: '2.5rem',
+                  top: '50%',
+                  left: '3.5vw',
+                  width: '1%',
+                  minWidth: '20px', 
+                  borderRadius: '25%', 
+                  color: 'gray'}}></i>
+            </NavLink>
+          {/* </div> */}
           <div id='prevAndNext'>
             <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> 
               <i className='fa fa-angle-left' 

@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
   #articleContainer img {
-    max-width: 90vw;
+    max-width: 80vw;
   }
 }
 
@@ -59,7 +59,7 @@ figure figcaption {
 }
 
 #prevAndNext .fa {
-  opacity: .6;
+  opacity: .4;
 }
 
 #prevArticle {
@@ -70,4 +70,25 @@ figure figcaption {
 #nextArticle {
   text-decoration: none;
   color: black;
+}
+
+#prevAndNextMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #prevAndNextMobile {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    /* top: 50%; */
+  }
+}
+
+@media (max-width: 768px) {
+  #prevAndNext {
+    display: none;
+  }
 }
