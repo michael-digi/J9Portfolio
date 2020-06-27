@@ -39,6 +39,10 @@
   }
 }
 
+#dropdown {
+  display: none;
+}
+
 .navDot {
   border: 1px solid gray;
   background-color: white;
