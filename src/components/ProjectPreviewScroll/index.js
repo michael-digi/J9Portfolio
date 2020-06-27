@@ -1,10 +1,12 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard';
+import SectionTitleMobile from '../SectionTitleMobile';
 import './ProjectPreviewScroll.css';
 
 function ProjectPreviewScroll(props) {
   return (
     <div id='projectScroll'>
+      <SectionTitleMobile section='Projects' />
       <ProjectCard 
         title='Fort Greene' 
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

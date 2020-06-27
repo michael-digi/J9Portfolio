@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
 import SliderDots from '../SliderDots';
 import ProjectPreviewScroll from '../ProjectPreviewScroll';
+import SectionTitleMobile from '../SectionTitleMobile';
 import './Projects.css';
 import SlideImage from '../SlideImage';
 import SliderDot from '../SliderDot';
@@ -93,8 +94,8 @@ function Projects() {
   }
 
   return (
+    <>
     <div id='projects'>
-      
       <ProjectPreviewScroll changeProject={changeProject} />
       
         <div id='slideShow'>
@@ -130,6 +131,7 @@ function Projects() {
           <SliderDots dots={dots}/>
         </div>
     </div>
+  </>
   );
 }
 

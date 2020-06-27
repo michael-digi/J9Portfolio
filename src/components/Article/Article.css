@@ -72,18 +72,20 @@ figure figcaption {
   color: black;
 }
 
-#prevAndNextMobile {
+#prevArticleMobile {
+  display: none;
+}
+
+#nextArticleMobile {
   display: none;
 }
 
 @media (max-width: 768px) {
-  #prevAndNextMobile {
-    z-index: 1;
+  #prevArticleMobile {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: fixed;
-    /* top: 50%; */
+  }
+  #nextArticleMobile {
+    display: flex;
   }
 }
 

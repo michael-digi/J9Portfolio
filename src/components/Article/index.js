@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { parseXML, decodeHTMLEntitiesParagraphs } from '../helpers';
 import SideNavArticles from '../SideNavArticles';
 import ArticlesInfo from '../ArticlesInfo';
+import ArticlesNavMobile from '../ArticlesNavMobile';
 import { NavLink } from 'react-router-dom';
 import parse from 'html-react-parser';
 // import { useSelector, useDispatch } from 'react-redux'
@@ -73,7 +74,8 @@ function Article(props) {
 
   return (
     <>
-      <SideNavArticles />
+      <ArticlesNavMobile />
+      <SideNavArticles type={props.match.params.type.toLowerCase()} />
       <div id='articleContainer'>
         <ArticlesInfo 
           articleTitle={articleTitle} 
@@ -83,7 +85,7 @@ function Article(props) {
         />
         <div id='article'> {articleBody}
           {/* <div id='prevAndNextMobile'> */}
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='nextArticle'> 
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${nextTitle}`} id='nextArticleMobile'> 
               <i className='fa fa-angle-right'  
                 style={{
                   zIndex: 1, 
@@ -98,7 +100,7 @@ function Article(props) {
                   borderRadius: '25%', 
                   color: 'gray'}}></i>
             </NavLink>
-            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticle'> 
+            <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${prevTitle}`} id='prevArticleMobile'> 
               <i className='fa fa-angle-left' 
                 style={{
                   zIndex: 1, 

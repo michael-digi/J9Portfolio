@@ -13,7 +13,7 @@ function Post(props) {
       <div className='postParagraph'> 
         {paragraph} . . . 
       </div>
-      <div className='readMore'> Continue Reading > </div>
+      <div className='readMore'> {'Continue Reading >'} </div>
     </NavLink>
   )
 }

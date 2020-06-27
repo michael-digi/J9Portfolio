@@ -7,7 +7,7 @@ function SeeMorePosts(props) {
   console.log(path, url)
   return (
     <NavLink to={`/articles/${props.type.toLowerCase()}/`} className='post' id='seeMore' >
-      <div className='postTitle'> <b> Click For More {props.type} Content . . . </b>  </div>
+      <div className='postTitle'> <b> More {props.type} Content </b>  </div>
     </NavLink>
   )
 }

@@ -3,7 +3,7 @@ import React, {Suspense, lazy, useState, useEffect} from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Projects from '../Projects';
 import './MainScroll.css';
-import { cleanup } from '@testing-library/react';
+import SectionTitleMobile from '../SectionTitleMobile';
 
 // const Projects = lazy(() => import('../Projects'))
 const PhotoJournal= lazy(() => import('../PhotoJournal'))

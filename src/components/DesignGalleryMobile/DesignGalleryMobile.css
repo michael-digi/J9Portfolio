@@ -7,6 +7,7 @@
   #designGalleryContainerMobile {
     display: grid;
     max-height: 100%;
+    /* overflow: hidden; */
     /* border: 1px solid black; */
     /* border-top: 1px solid lightgray; */
     grid-template-columns: repeat(5, 1fr);
@@ -23,6 +24,7 @@
     border-right: 1px solid lightgray;
     border-left: 1px solid lightgray;
     overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     /* padding-top: 25%; */
     border: none;

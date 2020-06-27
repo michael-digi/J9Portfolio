@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ArticlesNavMobile from '../ArticlesNavMobile';
 import SideNavArticles from '../SideNavArticles';
 import ArticlesInfo from '../ArticlesInfo';
 import ArticlesList from '../ArticlesList';
@@ -37,7 +38,8 @@ function ArticlesByCategory(props) {
   
   return (
     <>
-      <SideNavArticles />
+      <ArticlesNavMobile />
+      <SideNavArticles type={props.match.params.type.toLowerCase()} />
       <div id='articlesByCategoryContainer'>
         <ArticlesInfo articleTitle={title}/>
         {/* <ArticlesSideNav articleTitle={'History Theory & Methodology'}/> */}
