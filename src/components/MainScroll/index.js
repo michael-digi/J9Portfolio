@@ -13,23 +13,35 @@ const ContactSection = lazy(() => import('../ContactSection'))
 
 function MainScroll() {
   let prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    let dropdown = document.getElementById('dropdown')
-    let compStyles = window.getComputedStyle(dropdown);
-    let px = compStyles.getPropertyValue('top')
-    if (px === '0px') return
+  useEffect(() => {
+    window.addEventListener('scroll', pageScroll)
     
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    return () => {
+      window.removeEventListener('scroll', pageScroll)
+    }
+  },[])
+
+  function pageScroll() {
+    let dropdown = document.getElementById('dropdown')
+    if (dropdown !== null ) {
+      let compStyles = window.getComputedStyle(dropdown);
+      let px = compStyles.getPropertyValue('top')
+      if (px === '0px') return
+      let currentScrollPos = window.pageYOffset;
+      console.log(currentScrollPos, prevScrollpos)
+      if (prevScrollpos > currentScrollPos || currentScrollPos === '0') {
       // setScrollClass('navMobile')
       document.getElementById('navMobile').style.top = '0'
-    } else {
-      // setScrollClass('navMobileHidden')
+      } else {
+    // setScrollClass('navMobileHidden')
       document.getElementById('navMobile').style.top = '-50px'
+      }
+      prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
   }
-  useEffect(() => {
+  
+
+useEffect(() => {
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", arguments);
     });
