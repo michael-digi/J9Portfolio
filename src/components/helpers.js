@@ -95,27 +95,25 @@ export function makeArticleCards(articles = [], articleType='') {
   "July", "August", "September", "October", "November", "December"]
   
   articles.forEach((article, index) => {
-    console.log(article, ' this is index')
     let description = decodeHTMLEntities(article.description)
     let type;
     let date = new Date(article.pubDate)
     let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`;
-    if (articleType === 'all') {
-      if (article.category.includes('Art Gallery')) type = 'art'
-      if (article.category.includes('Design Gallery')) type = 'design'
-      if (!article.category.includes('Art Gallery') && !article.category.includes('Design Gallery')) {
-        if (typeof article.category === 'object') type =  article.category[0]
-        else type =  article.category
-      } 
-    }
-    else {
-      type = articleType
-    }
+    type = articleType
+  //   if (articleType === 'all') {
+  //     if (article.category.includes('Art Gallery')) type = 'art'
+  //     if (article.category.includes('Design Gallery')) type = 'design'
+  //     if (!article.category.includes('Art Gallery') && !article.category.includes('Design Gallery')) {
+  //       if (typeof article.category === 'object') type =  article.category[0]
+  //       else type = article.category
+  //   } 
+  //  }
+  //  else type = articleType
     cards.push(
       <ArticlesCard
         key={article.title}
-        index={index}
         type={type}
+        index={index}
         title={article.title}
         description={description}
         date={pubDate}

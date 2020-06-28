@@ -15,11 +15,11 @@ function ArticlesByCategory(props) {
     window.scrollTo(0, 0)
     let RSS_URL;
     let type = props.match.params.type.toLowerCase()
+    
     if (type === 'design') RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`
     if (type === 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`
     if (type === 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/feed`
     if (type !== 'design' && type !== 'art' && type !== 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/category/${type}/feed`
-    console.log(type)
     setType(type)
 
     fetch('https://cors-anywhere.herokuapp.com/' + RSS_URL)
@@ -42,6 +42,7 @@ function ArticlesByCategory(props) {
     console.log('unmounted')
     setArticles([])
     setTitle('')
+    setType('')
   }
 }, [props.match.params.type])
   
