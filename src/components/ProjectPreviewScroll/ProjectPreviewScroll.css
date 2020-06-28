@@ -23,10 +23,6 @@
   /* For mobile phones: */
   #projectScroll .sectionTitle{
     font-size: 3vh;
-    /* align-items: center; */
-    /* transform: rotate(270deg); */
-    /* margin: 0% 5% 0% 0%;
-    padding-top: 0%; */
   }
 }
 
@@ -52,10 +48,6 @@
 .thumbnail#fortgreene {
   background-image: url('../images/FortGreene/thumbnail/FtGreene_thumbnail-min.webp');
 }
-
-/* .thumbnail#marriot {
-  background-image: url('../images/MariottLibrary_UniversityofUtah/thumbnail/SOUTH_NORTH_thumbnail-min.webp');
-} */
 
 .thumbnail#sevenseven {
   background-image: url('../images/SevenSeven/thumbnail/Thumbnail-min.jpg');

@@ -39,10 +39,9 @@ function ArticlesByCategory(props) {
   return (
     <>
       <ArticlesNavMobile />
-      <SideNavArticles type={props.match.params.type.toLowerCase()} />
+      <SideNavArticles type={props.match.params.type} />
       <div id='articlesByCategoryContainer'>
         <ArticlesInfo articleTitle={title}/>
-        {/* <ArticlesSideNav articleTitle={'History Theory & Methodology'}/> */}
         <ArticlesList articles={articles} />
       </div>
     </>

@@ -1,6 +1,5 @@
 #sidebar {
   display: flex;
-  /* justify-content: space-between; */
   text-align: center;
   width:100vh;
   position: fixed;
@@ -14,11 +13,8 @@
 .navTab {
   width: 25%;
   max-height: 45px;
-  /* font-family: 'Comfortaa'; */
   font-size: .9rem;
-  /* font-weight: bold; */
   line-height: 45px;
-  /* border-right: 1px solid lightgray; */
   letter-spacing: 1px;
   transition: ease-in-out .25s;
   color: black;
@@ -29,11 +25,8 @@
 .navTabActive {
   width: 25%;
   max-height: 45px;
-  /* font-family: 'Comfortaa'; */
   font-size: .9rem;
-  /* font-weight: bold; */
   line-height: 45px;
-  /* border-right: 1px solid lightgray; */
   letter-spacing: 1px;
   transition: ease-in-out .25s;
   color: black;

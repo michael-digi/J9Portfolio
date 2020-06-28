@@ -37,12 +37,10 @@
   text-align: left;
   align-content: center;
   margin-top: 5%;
-  /* border: 1px solid black; */
 }
 
 .post .postParagraph {
   margin-top: 2.5%;
-  /* border: 1px solid black; */
   font-size: .8rem;
   text-align: left;
   line-height: 1rem;
@@ -52,5 +50,4 @@
   text-align: right;
   margin-top: 2.5%;
   font-size: .7rem;
-  /* border: 1px solid black; */
 }

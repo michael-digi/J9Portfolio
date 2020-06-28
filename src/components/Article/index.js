@@ -5,10 +5,7 @@ import ArticlesInfo from '../ArticlesInfo';
 import ArticlesNavMobile from '../ArticlesNavMobile';
 import { NavLink } from 'react-router-dom';
 import parse from 'html-react-parser';
-// import { useSelector, useDispatch } from 'react-redux'
-// import { useRouteMatch } from 'react-router-dom';
 import './Article.css';
-import { indexOf } from 'lodash';
 
 function Article(props) {
   const [articleData, setArticleData] = useState({
@@ -19,13 +16,6 @@ function Article(props) {
     nextTitle: '',
     prevTitle: ''
   })
-  const [articleBody, setArticleBody] = useState([])
-  const [articleTitle, setArticleTitle] = useState('')
-  const [articleAuthor, setArticleAuthor] = useState('')
-  const [articleDate, setArticleDate] = useState('')
-  const [nextTitle, setNextTitle] = useState('')
-  const [prevTitle, setPrevTitle] = useState('')
-  // const [articleImage, setArticleImage] = useState('')
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   
   useEffect(() => {
@@ -85,10 +75,8 @@ function Article(props) {
           articleTitle={articleData.articleTitle} 
           articleAuthor={articleData.articleAuthor}
           articleDate={articleData.articleDate}
-          // articleImage={articleImage}
         />
         <div id='article'> {articleData.articleBody}
-          {/* <div id='prevAndNextMobile'> */}
             <NavLink to={`/articles/${props.match.params.type.toLowerCase()}/${articleData.nextTitle}`} id='nextArticleMobile'> 
               <i className='fa fa-angle-right'  
                 style={{

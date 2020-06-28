@@ -12,7 +12,6 @@
 
 #navMobile {
   display: none;
-  /* border: 1px solid black; */
 }
 
 @media (max-width: 768px) {
@@ -23,14 +22,11 @@
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    /* height: 10%; */
     width: 10%;
     min-width: 50px;
     top: 0;
     right: 0;
     margin-right: 2.5%;
-    /* border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray; */
     padding: 5% 2.5% 5% 2.5%;
     transition: top .6s;
   }
@@ -55,7 +51,6 @@
   #dropdown {
     display: flex;
     flex-direction: column;
-    /* padding-left: 10%; */
     z-index: 3;
     position: fixed;
     top: -200px;
@@ -83,47 +78,34 @@
 }
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
   .elementPhotoJournal {
-    
-    /* max-height: 80vh; */
+
   }
 }
 
 @media (max-width: 768px) {
   /* For mobile phones: */
   .elementArt {
-    /* display: flex;
-    align-content: center; */
     max-height: 75vh;
   }
 }
 
 @media (max-width: 1024px) {
-  /* For mobile phones: */
   .elementArt {
-    /* display: flex;
-    align-content: center; */
     max-height: 75vh;
   }
 }
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
   .elementDesign {
-    
-    /* max-height: 80vh; */
   }
 }
 
 .navTab {
   width: 20%;
   max-height: 45px;
-  /* font-family: 'Comfortaa'; */
   font-size: .9rem;
-  /* font-weight: bold; */
   line-height: 45px;
-  /* border-right: 1px solid lightgray; */
   letter-spacing: 1px;
   transition: ease-in-out .25s;
   color: black;
@@ -131,7 +113,6 @@
 }
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
   .navTab {
     min-width: 100%;
     line-height: 0px;
@@ -160,7 +141,6 @@
 
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
   #sidebar {
     display: none;
   }

@@ -14,8 +14,6 @@
   #articleTitleContainer {
     display: flex;
     grid-column: 1/6;
-    /* align-items: center; */
-    /* text-align: justify; */
     border: none;
     padding: 0px;
     margin: 10% 10% 0% 10%;
@@ -62,7 +60,6 @@
   font-size: 1.2rem;
   border-bottom: 1px solid black;
   padding-bottom: 5%;
-  /* color: gray; */
 }
 
 ul {

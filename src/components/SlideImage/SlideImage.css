@@ -44,7 +44,6 @@
   padding: 2%;
   align-self: flex-end;
   display: none;
-  /* bottom: 100px; */
   -webkit-animation: fadeIn ease 5s ; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadeIn ease .5s; /* Firefox < 16 */
    -ms-animation: fadeIn ease .5s; /* Internet Explorer */

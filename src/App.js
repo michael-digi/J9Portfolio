@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import MainScroll from './components/MainScroll';
 import Article from './components/Article';
-import AllArticles from './components/AllArticles';
 import ArticlesByCategory from './components/ArticlesByCategory'
 import './App.css';
 

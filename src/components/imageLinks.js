@@ -5,5 +5,4 @@ export const bathbw = require.context('./images/Bath_BodyWorks', false, /\.(png|
 export const fortgreene = require.context('./images/FortGreene', false, /\.(png|jpe?g|svg|webp)$/)
 export const franklinst = require.context('./images/FranklinSt', false, /\.(png|jpe?g|svg|webp)$/)
 export const xsre = require.context('./images/XSRE', false, /\.(png|jpe?g|svg|webp)$/)
-// export const marriot = require.context('./images/MariottLibrary_UniversityofUtah', false, /\.(png|jpe?g|svg|webp)$/)
 export const sevenseven = require.context('./images/SevenSeven', false, /\.(png|jpe?g|svg|webp)$/)

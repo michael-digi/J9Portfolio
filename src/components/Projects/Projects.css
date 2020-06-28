@@ -4,7 +4,6 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   background-color: white;
-  /* min-width: 950px; */
 }
 
 @media (max-width: 768px) {
@@ -82,12 +81,6 @@
   opacity: .3;
   transition: all ease-in-out .25s;
 }
-
-/* .fa:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-} */
-
 
 
 

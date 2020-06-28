@@ -26,7 +26,6 @@
   /* For mobile phones: */
   .thumbnailContainer {
     min-width: 30vh;
-    /* min-height: 20vh; */
     border: none;
     padding-right: 10%;
   }
@@ -52,7 +51,6 @@
 @media (max-width: 768px) {
   /* For mobile phones: */
   .thumbnail {
-    /* flex-direction: row; */
     height: 75%; 
     width: 100%;
   }
@@ -94,7 +92,6 @@
 
 .projectTitle {
   text-align: center;
-  /* font-family: 'Calibri'; */
   font-size: 1.2rem;
   color: gray;
   position: absolute;

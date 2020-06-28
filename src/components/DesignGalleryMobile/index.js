@@ -37,7 +37,6 @@ function DesignGallery() {
             img={articles[0]['media:content'][1].url}
             title={articles[0].title}
             paragraph={articles[0].description}
-            // content={articles[0]['content:encoded']} 
           />
           : null }
           
@@ -50,7 +49,6 @@ function DesignGallery() {
             img={articles[1]['media:content'][1].url}
             title={articles[1].title}
             paragraph={articles[1].description}
-            // content={articles[1]['content:encoded']} 
           />
           : null }
           
@@ -63,7 +61,6 @@ function DesignGallery() {
             img={articles[2]['media:content'][1].url}
             title={articles[2].title}
             paragraph={articles[2].description}
-            // content={articles[2]['content:encoded']} 
           />
           : null }
           
@@ -76,7 +73,6 @@ function DesignGallery() {
             img={articles[3]['media:content'][1].url}
             title={articles[3].title}
             paragraph={articles[3].description}
-            // content={articles[3]['content:encoded']} 
           />
           : null }
         
@@ -89,7 +85,7 @@ function DesignGallery() {
             img={articles[4]['media:content'][1].url}
             title={articles[4].title}
             paragraph={articles[4].description}
-            // content={articles[4]['content:encoded']} 
+
           />
           : null }
           
@@ -102,7 +98,6 @@ function DesignGallery() {
             img={articles[5]['media:content'][1].url}
             title={articles[5].title}
             paragraph={articles[5].description}
-            // content={articles[5]['content:encoded']} 
           />
           : null }
           
@@ -115,7 +110,6 @@ function DesignGallery() {
             img={articles[6]['media:content'][1].url}
             title={articles[6].title}
             paragraph={articles[6].description}
-            // content={articles[6]['content:encoded']} 
           />
           : null }
 
@@ -128,7 +122,6 @@ function DesignGallery() {
             img={articles[7]['media:content'][1].url}
             title={articles[7].title}
             paragraph={articles[7].description}
-            // content={articles[7]['content:encoded']} 
           />
           : null }
           

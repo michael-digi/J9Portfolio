@@ -1,6 +1,4 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
-// import { decodeHTMLEntities } from '../helpers';
 import './InstagramPhoto.css';
 
 function InstagramPhoto(props) {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ArticlesCard from '../ArticlesCard';
-import { parseXML, makeArticleCards } from '../helpers';
+import { makeArticleCards } from '../helpers';
 import './ArticlesList.css';
 
 function ArticlesList(props) {

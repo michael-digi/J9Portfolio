@@ -5,13 +5,11 @@
   width: 100%;
   text-decoration: none;
   color: black;
-  /* border: 1px solid lightgray; */
   transition: all .25s ease-in-out;
 }
 
 #articlesCard:hover {
   cursor: pointer;
-  /* transform: scale(1.05); */
 }
 
 #articlesCardTitle {

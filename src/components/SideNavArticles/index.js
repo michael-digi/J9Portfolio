@@ -26,7 +26,6 @@ function SideNavArticles(props) {
       <Link className={styles.art} to='/articles/art'>Art Gallery</Link>
       <Link className={styles.all} to='/articles/all'>All Content</Link>
       <Link className='navTab' to='/'>j1989</Link>
-      {/* <Link className='navTab' to='projects'>Projects</Link> */}
     </div>
   );
 }

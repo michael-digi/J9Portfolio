@@ -1,9 +1,8 @@
-import React, {Suspense, lazy, useState, useEffect} from 'react';
-// import SideNav from '../SideNav';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React, {Suspense, lazy, useEffect} from 'react';
+import { Link, Element, Events, scrollSpy} from 'react-scroll'
+import LandingPage from '../LandingPage';
 import Projects from '../Projects';
 import './MainScroll.css';
-import SectionTitleMobile from '../SectionTitleMobile';
 
 // const Projects = lazy(() => import('../Projects'))
 const PhotoJournal= lazy(() => import('../PhotoJournal'))
@@ -30,10 +29,8 @@ function MainScroll() {
       let currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos, prevScrollpos)
       if (prevScrollpos > currentScrollPos || currentScrollPos <= '100') {
-      // setScrollClass('navMobile')
       document.getElementById('navMobile').style.top = '0'
       } else {
-    // setScrollClass('navMobileHidden')
       document.getElementById('navMobile').style.top = '-50px'
       }
       prevScrollpos = currentScrollPos;
@@ -93,6 +90,7 @@ useEffect(() => {
         <Link className='navTab' activeClass='active' to='photos' spy={true} smooth={true} offset={0} duration={1000}>Photo Journal</Link>
         <Link className='navTab' activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={1000}>Projects</Link>
       </div>
+      {/* <LandingPage /> */}
       <Element name='projects' className='element'>
         <Projects />
       </Element>

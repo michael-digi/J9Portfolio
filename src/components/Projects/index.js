@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
 import SliderDots from '../SliderDots';
 import ProjectPreviewScroll from '../ProjectPreviewScroll';
-import SectionTitleMobile from '../SectionTitleMobile';
 import './Projects.css';
 import SlideImage from '../SlideImage';
 import SliderDot from '../SliderDot';
@@ -36,9 +35,6 @@ function Projects() {
       case 'xsre':
         importImages(xsre)
         break;
-      // case 'marriot':
-      //   importImages(marriot)
-      //   break;
       case 'sevenseven':
         importImages(sevenseven)
         break;

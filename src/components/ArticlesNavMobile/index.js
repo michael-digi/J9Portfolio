@@ -21,10 +21,8 @@ function ArticlesNavMobile() {
       let currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos, prevScrollpos)
       if (prevScrollpos > currentScrollPos || currentScrollPos <= '100') {
-      // setScrollClass('navMobile')
       document.getElementById('navMobile').style.top = '0'
       } else {
-    // setScrollClass('navMobileHidden')
       document.getElementById('navMobile').style.top = '-50px'
       }
       prevScrollpos = currentScrollPos;
