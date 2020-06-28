@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { parseXML } from '../helpers';
 import './ArticlesCard.css';
 
 function ArticlesCard(props) {

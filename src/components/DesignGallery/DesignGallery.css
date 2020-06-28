@@ -1,19 +1,13 @@
 #designGalleryContainer {
   display: grid;
   height: 100%;
-  /* border: 1px solid black; */
-  /* border-top: 1px solid lightgray; */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  /* min-width: 950px; */
 }
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
   #designGalleryContainer {
     display: none;
-  /* border: 1px solid black; */
-  /* border-top: 1px solid lightgray; */
   }
 }
 

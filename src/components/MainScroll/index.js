@@ -6,8 +6,8 @@ import './MainScroll.css';
 
 // const Projects = lazy(() => import('../Projects'))
 const PhotoJournal= lazy(() => import('../PhotoJournal'))
-const DesignGallery = lazy(() => import('../DesignGallery'))
-const ArtGallery = lazy(() => import('../ArtGallery'))
+const DesignGalleryContainer = lazy(() => import('../DesignGalleryContainer'))
+const ArtGalleryContainer = lazy(() => import('../ArtGalleryContainer'))
 const ContactSection = lazy(() => import('../ContactSection'))
 
 function MainScroll() {
@@ -27,11 +27,11 @@ function MainScroll() {
       let px = compStyles.getPropertyValue('top')
       if (px === '0px') return
       let currentScrollPos = window.pageYOffset;
-      console.log(currentScrollPos, prevScrollpos)
+      
       if (prevScrollpos > currentScrollPos || currentScrollPos <= '100') {
-      document.getElementById('navMobile').style.top = '0'
+        document.getElementById('navMobile').style.top = '0'
       } else {
-      document.getElementById('navMobile').style.top = '-50px'
+        document.getElementById('navMobile').style.top = '-50px'
       }
       prevScrollpos = currentScrollPos;
     }
@@ -40,11 +40,9 @@ function MainScroll() {
 
 useEffect(() => {
     Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
     });
  
     Events.scrollEvent.register('end', function(to, element) {
-      console.log("end", arguments);
     });
  
     scrollSpy.update();
@@ -103,13 +101,13 @@ useEffect(() => {
 
       <Suspense fallback={<div>Loading...</div>}>
         <Element name='art' className='elementArt'>
-          <ArtGallery />
+          <ArtGalleryContainer />
         </Element>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
         <Element name='design' className="elementDesign">
-          <DesignGallery />
+          <DesignGalleryContainer />
         </Element>
       </Suspense>
 

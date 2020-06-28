@@ -7,7 +7,8 @@ function SlideImage(props) {
   const [loaded, makeLoaded] = useState(false)
   useEffect(() => {
     makeLoaded(props.loaded)
-  },[])
+    console.log(navigator.userAgent)
+  },[props.loaded])
 
   return (
       <Fade key={props.index}>
@@ -18,7 +19,7 @@ function SlideImage(props) {
             onLoad={() => {
               makeLoaded(true)
             }} src={props.img} />
-          <div id='description'> {descriptions[props.project]} </div>
+         {typeof InstallTrigger !== 'undefined' ? null : <div id='description'> {descriptions[props.project]} </div>}
         </div>
       </Fade>
   );

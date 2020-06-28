@@ -19,11 +19,11 @@ function ArticlesNavMobile() {
       let px = compStyles.getPropertyValue('top')
       if (px === '0px') return
       let currentScrollPos = window.pageYOffset;
-      console.log(currentScrollPos, prevScrollpos)
+      
       if (prevScrollpos > currentScrollPos || currentScrollPos <= '100') {
-      document.getElementById('navMobile').style.top = '0'
+        document.getElementById('navMobile').style.top = '0'
       } else {
-      document.getElementById('navMobile').style.top = '-50px'
+        document.getElementById('navMobile').style.top = '-50px'
       }
       prevScrollpos = currentScrollPos;
     }
