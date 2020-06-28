@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6a161393694ddbfe762258773f7fe6c",
+    "revision": "4d5d15f86a5772fddb439db571dbb300",
     "url": "/janineteeneightynine/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/css/6.53eb4022.chunk.css"
   },
   {
-    "revision": "e8f914231b8910b44afd",
+    "revision": "6ca601ca3dacad423430",
     "url": "/janineteeneightynine/static/css/main.22bdf754.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/js/6.9e870aa5.chunk.js"
   },
   {
-    "revision": "e8f914231b8910b44afd",
-    "url": "/janineteeneightynine/static/js/main.b138df16.chunk.js"
+    "revision": "6ca601ca3dacad423430",
+    "url": "/janineteeneightynine/static/js/main.63d6c850.chunk.js"
   },
   {
     "revision": "65e69a9d2078f30bb14f",
@@ -112,12 +112,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janineteeneightynine/static/media/Franklinst-2.aa5dc78e.jpg"
   },
   {
-    "revision": "d8218f141fbab8461f52e53ec1ef6be1",
-    "url": "/janineteeneightynine/static/media/FtGreene_1.d8218f14.webp"
+    "revision": "02872523a93aba41967386213f9dc1c6",
+    "url": "/janineteeneightynine/static/media/FtGreene_1.02872523.webp"
   },
   {
-    "revision": "02872523a93aba41967386213f9dc1c6",
-    "url": "/janineteeneightynine/static/media/FtGreene_3.02872523.jpg"
+    "revision": "d8218f141fbab8461f52e53ec1ef6be1",
+    "url": "/janineteeneightynine/static/media/FtGreene_2.d8218f14.webp"
   },
   {
     "revision": "0a66edcc850b0c30c568ccb897a38e95",
