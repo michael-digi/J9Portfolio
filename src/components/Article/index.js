@@ -42,6 +42,7 @@ function Article(props) {
             let date = new Date(item.pubDate)
             let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
             let decoded = decodeHTMLEntitiesParagraphs(item['content:encoded'])
+            console.log(decoded)
             let parseDecoded = parse(decoded)
             let articleData = {
               articleBody: parseDecoded,

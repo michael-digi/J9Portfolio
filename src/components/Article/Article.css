@@ -22,13 +22,14 @@
 
 @media (max-width: 768px) {
   #articleContainer img {
-    max-width: 80vw;
+    width: 80vw;
+    min-height: 40vh;
   }
 }
 
 @media (max-width: 768px) {
   #articleContainer {
-    max-height: 100%;
+    height: 100%;
   }
 }
 
@@ -41,10 +42,10 @@ figure {
 
 @media (max-width: 768px) {
   figure {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
-    margin-bottom: 2.5%;
+    /* margin-bottom: 2.5%; */
   }
 }
 
