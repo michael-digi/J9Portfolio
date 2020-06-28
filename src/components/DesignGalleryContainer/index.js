@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import DesignGallery from '../DesignGallery';
-import { setArtArticles } from '../../actions';
+import { setDesignArticles } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux'
 import { parseXML } from '../helpers';
 
 function DesignGalleryContainer() {
   const dispatch = useDispatch()
-  const articles = useSelector(state => state.currentArticles.artArticles)
+  const articles = useSelector(state => state.currentArticles.designArticles)
   const RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`;
   
   useEffect(() => {
@@ -16,7 +16,7 @@ function DesignGalleryContainer() {
     .then(data => parseXML(data))
     .then(parsed => {
       console.log(parsed.channel.item, ' this is the item')
-      dispatch(setArtArticles(parsed.channel.item))
+      dispatch(setDesignArticles(parsed.channel.item))
     })
   }, [])
   
