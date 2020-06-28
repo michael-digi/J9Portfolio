@@ -34,6 +34,11 @@ function ArticlesByCategory(props) {
         }
         setArticles(parsed.channel.item)
   })
+  return function cleanup() {
+    console.log('unmounted')
+    setArticles([])
+    setTitle('')
+  }
 }, [props.match.params.type])
   
   return (

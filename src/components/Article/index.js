@@ -64,6 +64,18 @@ function Article(props) {
           }
         })
     })
+    return function cleanup() {
+      console.log('unmounted')
+      let articleData = {
+        articleBody: [],
+        articleTitle: '',
+        articleAuthor: '',
+        articleDate: '',
+        nextTitle: '',
+        prevTitle: ''
+      }
+      setArticleData(articleData)
+    }
   }, [props.match.params.title])
 
   return (
