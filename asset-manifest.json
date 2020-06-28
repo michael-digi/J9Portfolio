@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/janineteeneightynine/static/css/main.90bec83d.chunk.css",
-    "main.js": "/janineteeneightynine/static/js/main.1a675418.chunk.js",
-    "main.js.map": "/janineteeneightynine/static/js/main.1a675418.chunk.js.map",
+    "main.js": "/janineteeneightynine/static/js/main.d88a83de.chunk.js",
+    "main.js.map": "/janineteeneightynine/static/js/main.d88a83de.chunk.js.map",
     "runtime-main.js": "/janineteeneightynine/static/js/runtime-main.f58042cc.js",
     "runtime-main.js.map": "/janineteeneightynine/static/js/runtime-main.f58042cc.js.map",
     "static/js/2.3b23113c.chunk.js": "/janineteeneightynine/static/js/2.3b23113c.chunk.js",
@@ -20,7 +20,7 @@
     "static/js/6.43219c20.chunk.js": "/janineteeneightynine/static/js/6.43219c20.chunk.js",
     "static/js/6.43219c20.chunk.js.map": "/janineteeneightynine/static/js/6.43219c20.chunk.js.map",
     "index.html": "/janineteeneightynine/index.html",
-    "precache-manifest.3d2d15efce18447dd7b79a34ac73aaab.js": "/janineteeneightynine/precache-manifest.3d2d15efce18447dd7b79a34ac73aaab.js",
+    "precache-manifest.199959c2b0b79de94b10a550b6022655.js": "/janineteeneightynine/precache-manifest.199959c2b0b79de94b10a550b6022655.js",
     "service-worker.js": "/janineteeneightynine/service-worker.js",
     "static/css/3.1649df73.chunk.css.map": "/janineteeneightynine/static/css/3.1649df73.chunk.css.map",
     "static/css/4.be017af2.chunk.css.map": "/janineteeneightynine/static/css/4.be017af2.chunk.css.map",
@@ -75,6 +75,6 @@
     "static/js/runtime-main.f58042cc.js",
     "static/js/2.3b23113c.chunk.js",
     "static/css/main.90bec83d.chunk.css",
-    "static/js/main.1a675418.chunk.js"
+    "static/js/main.d88a83de.chunk.js"
   ]
 }
