@@ -1,8 +1,83 @@
 #contactSection {
   display: grid;
   height: 100%;
+  color: gray;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
+}
+
+#inputSection {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  grid-column: 3/6;
+  grid-row: 1/6;
+  /* height: 100%; */
+  /* border: 1px solid black; */
+  margin: 10%;
+}
+
+@media (max-width: 768px) {
+  #inputSection {
+    grid-column: 1/6;
+    grid-row: 1/6;
+    margin-top: 5%;
+    border: none;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#email {
+  height: 10%;
+  padding: 1% 0% 1% 2.5%;
+  max-width: 100%;
+  font-family: 'Comfortaa';
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#message {
+  flex: 1;
+  padding: 2.5%;
+  height: 100%;
+  max-width: 100%;
+  font-family: 'Comfortaa';
+  font-size: 1rem;
+  /* margin-top: 2.5%; */
+  border: none;
+  /* border-bottom: 1px solid lightgray; */
+}
+
+#message:focus {
+  outline: none;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  font-size: 1rem;
+  font-family: 'Comfortaa';
+  border: none;
+  width: 20%;
+  height: 15%;
+}
+
+@media (max-width: 768px) {
+  #button {
+    height: 12.5%;
+  }
 }
 
 #contactInfo {
@@ -13,6 +88,16 @@
   /* height: 100%; */
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
+}
+
+@media (max-width: 768px) {
+  #contactInfo {
+    display: none;
+    /* grid-column: 1/6;
+    grid-row: 1/6;
+    margin-top: 5%;
+    border: none; */
+  }
 }
 
 #contactBox {
@@ -28,7 +113,7 @@
   font-size: 1.5rem;
   /* border-bottom: 1px solid lightgray; */
   padding-bottom: 2.5%;
-  text-align: right;
+  text-align: left;
   margin-right: 4%;
 }
 

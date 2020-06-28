@@ -7,6 +7,13 @@ import { createStore } from 'redux';
 import reducers from './reducers';
 
 const store = createStore(reducers)
+try {
+  let type = (typeof InstallTrigger)
+  if (type === 'undefined') window.screen.orientation.lock('portrait')
+}
+catch {
+  console.log('not supported')
+}
 
 ReactDOM.render(
   <React.StrictMode>

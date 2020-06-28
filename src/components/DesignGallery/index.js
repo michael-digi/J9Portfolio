@@ -135,3 +135,7 @@ function DesignGallery(props) {
 }
 
 export default DesignGallery;
+
+DesignGallery.defaultProps = {
+  articles: []
+}

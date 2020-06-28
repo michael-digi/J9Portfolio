@@ -31,24 +31,14 @@ function Article(props) {
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => parseXML(data))
       .then(parsed => {
-        parsed.channel.item.forEach(item => {
+        parsed.channel.item.forEach((item, index) => {
           if (item.title.includes(props.match.params.title)) {
-            let indexCurrent = parsed.channel.item.indexOf(item)
-            let indexNext, indexPrev;
-            if (indexCurrent === parsed.channel.item.length - 1 || indexCurrent === 0) {
-              if (indexCurrent === parsed.channel.item.length - 1) {
-                indexNext = 0
-                indexPrev = indexCurrent - 1
-              }
-              if (indexCurrent === 0) {
-                indexNext = indexCurrent + 1
-                indexPrev = parsed.channel.item.length - 1
-              }
-            }
-            else {
-              indexNext = indexCurrent + 1;
-              indexPrev = indexCurrent - 1
-            }
+            let length = parsed.channel.item.length
+            let indexCurrent = index;
+            let indexNext = (indexCurrent + 1) % (length);
+            let indexPrev = (indexCurrent - 1) % (length)
+            if (indexPrev === -1) indexPrev = length - 1
+
             let date = new Date(item.pubDate)
             let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
             let decoded = parse(decodeHTMLEntitiesParagraphs(item['content:encoded']))

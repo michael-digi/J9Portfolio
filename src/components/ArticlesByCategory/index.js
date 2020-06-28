@@ -9,6 +9,7 @@ import './ArticlesByCategory.css';
 function ArticlesByCategory(props) {
   const [articles, setArticles] = useState([])
   const [title, setTitle] = useState('')
+  const [articleType, setType] = useState('')
   
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -18,12 +19,16 @@ function ArticlesByCategory(props) {
     if (type === 'art') RSS_URL = `https://historytheorymethodology.wordpress.com/category/art-gallery/feed`
     if (type === 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/feed`
     if (type !== 'design' && type !== 'art' && type !== 'all') RSS_URL = `https://historytheorymethodology.wordpress.com/category/${type}/feed`
+    console.log(type)
+    setType(type)
 
     fetch('https://cors-anywhere.herokuapp.com/' + RSS_URL)
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => parseXML(data))
       .then(parsed => {
+        console.log(parsed, ' this is parsed category')
+        setArticles(parsed.channel.item)
         if (parsed.channel.title.split(/\u2013|\u2014/g).length > 1) {
           let title = parsed.channel.title.split(/\u2013|\u2014/g)[1].trim()
           title = title + ' of ' + type[0].toUpperCase() + type.slice(1, type.length)
@@ -32,7 +37,6 @@ function ArticlesByCategory(props) {
         else {
           setTitle(parsed.channel.title)
         }
-        setArticles(parsed.channel.item)
   })
   return function cleanup() {
     console.log('unmounted')
@@ -47,7 +51,7 @@ function ArticlesByCategory(props) {
       <SideNavArticles type={props.match.params.type} />
       <div id='articlesByCategoryContainer'>
         <ArticlesInfo articleTitle={title}/>
-        <ArticlesList articles={articles} />
+        <ArticlesList articles={articles} type={articleType} />
       </div>
     </>
   )

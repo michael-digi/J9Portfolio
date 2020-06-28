@@ -6,7 +6,8 @@ function ArticlesList(props) {
   const [cards, setCards] = useState([])
   
   useEffect(() => {
-    let cards = makeArticleCards(props.articles)
+    let cards = makeArticleCards(props.articles, props.type)
+    console.log(cards, ' this is cards')
     setCards(cards)
   }, [props])
   
