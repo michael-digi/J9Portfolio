@@ -6,6 +6,12 @@
   grid-template-rows: repeat(5, 1fr);
 }
 
+@media (max-width: 768px) {
+  #contactSection {
+    min-width: 100vw;
+  }
+}
+
 #inputSection {
   display: flex;
   height: 50%;
