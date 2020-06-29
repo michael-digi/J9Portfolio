@@ -99,9 +99,11 @@
   .element {
     display: flex;
     flex-direction: row;
+    margin-top: 20%;
     /* height: 100%; */
     /* width: 100%; */
     overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
