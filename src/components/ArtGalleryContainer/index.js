@@ -15,7 +15,6 @@ function ArtGalleryContainer() {
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => parseXML(data))
     .then(parsed => {
-      console.log(parsed.channel.item, ' this is the item')
       dispatch(setArtArticles(parsed.channel.item))
     })
   }, [])

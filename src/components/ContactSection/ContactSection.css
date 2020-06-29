@@ -80,6 +80,10 @@
   height: 15%;
 }
 
+#button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   #button {
     height: 12.5%;

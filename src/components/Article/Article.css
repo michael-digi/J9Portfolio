@@ -11,6 +11,11 @@
 #article {
   grid-column: 3/6;
   margin: 5% 11% 5% 11%;
+  -webkit-animation: fadein ease-in .75s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeIn ease 1s; /* Firefox < 16 */
+      -ms-animation: fadeIn ease 1s; /* Internet Explorer */
+       -o-animation: fadeIn ease 1s; /* Opera < 12.1 */
+          animation: fadein ease-in .75s;
 }
 
 @media (max-width: 768px) {

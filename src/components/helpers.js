@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import _ from 'lodash'
 import ArticlesCard from './ArticlesCard';
 
@@ -121,4 +122,29 @@ export function makeArticleCards(articles = [], articleType='') {
     )
   })
   return cards
+}
+
+export function prepareArticle(articles, item, index) {
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  let length = articles.length
+  let indexCurrent = index;
+  let indexNext = (indexCurrent + 1) % (length);
+  let indexPrev = (indexCurrent - 1) % (length)
+  if (indexPrev === -1) indexPrev = length - 1
+
+  let date = new Date(item.pubDate)
+  let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
+  let decoded = decodeHTMLEntitiesParagraphs(item['content:encoded'])
+  let parseDecoded = parse(decoded)
+            
+  let articleData = {
+    articleBody: parseDecoded,
+    articleTitle: item.title,
+    articleAuthor: item['dc:creator'],
+    articleDate: pubDate,
+    nextTitle: articles[indexNext].title,
+    prevTitle: articles[indexPrev].title
+  }
+
+  return articleData;
 }

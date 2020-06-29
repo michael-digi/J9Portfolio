@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll'
 import ArticlesNavMobile from '../ArticlesNavMobile';
 import SideNavArticles from '../SideNavArticles';
 import ArticlesInfo from '../ArticlesInfo';
@@ -10,9 +11,13 @@ function ArticlesByCategory(props) {
   const [articles, setArticles] = useState([])
   const [title, setTitle] = useState('')
   const [articleType, setType] = useState('')
+
+  function scrollToTop() {
+    scroll.scrollToTop({duration: 500})
+  }
   
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({top: 0, left:0, behavior: 'smooth'})
     let RSS_URL;
     let type = props.match.params.type.toLowerCase()
     
@@ -38,6 +43,7 @@ function ArticlesByCategory(props) {
           setTitle(parsed.channel.title)
         }
   })
+  scrollToTop()
   return function cleanup() {
     console.log('unmounted')
     setArticles([])

@@ -3,6 +3,7 @@ import { Link, Element, Events, scrollSpy} from 'react-scroll'
 import SectionTitleMobile from '../SectionTitleMobile';
 import LandingPage from '../LandingPage';
 import Projects from '../Projects';
+import EmptyGallery from '../EmptyGallery';
 import './MainScroll.css';
 
 // const Projects = lazy(() => import('../Projects'))
@@ -95,25 +96,25 @@ useEffect(() => {
         <Projects />
       </Element>
       
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<EmptyGallery />}>
         <Element name='photos' className='elementPhotoJournal'>
           <PhotoJournal />
         </Element>
       </Suspense>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<EmptyGallery />}>
         <Element name='art' className='elementArt'>
           <ArtGalleryContainer />
         </Element>
       </Suspense>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<EmptyGallery />}>
         <Element name='design' className="elementDesign">
           <DesignGalleryContainer />
         </Element>
       </Suspense>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<EmptyGallery />}>
         <Element name='contact' className='element'>
           <ContactSection />
         </Element>

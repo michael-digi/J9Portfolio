@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { parseXML, decodeHTMLEntitiesParagraphs } from '../helpers';
+import { animateScroll as scroll } from 'react-scroll'
+import { parseXML, prepareArticle } from '../helpers';
 import SideNavArticles from '../SideNavArticles';
 import ArticlesInfo from '../ArticlesInfo';
 import ArticlesNavMobile from '../ArticlesNavMobile';
 import { NavLink } from 'react-router-dom';
-import parse from 'html-react-parser';
 import './Article.css';
 
 function Article(props) {
@@ -16,10 +16,13 @@ function Article(props) {
     nextTitle: '',
     prevTitle: ''
   })
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+  function scrollToTop() {
+    scroll.scrollToTop({duration: 500})
+  }
   
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // window.scrollTo({top: 0, left:0, behavior: 'smooth'})
     let RSS_URL;
     let type = props.match.params.type.toLowerCase()
     if (type === 'design') RSS_URL = `https://historytheorymethodology.wordpress.com/category/design-gallery/feed`
@@ -33,29 +36,12 @@ function Article(props) {
       .then(parsed => {
         parsed.channel.item.forEach((item, index) => {
           if (item.title.includes(props.match.params.title)) {
-            let length = parsed.channel.item.length
-            let indexCurrent = index;
-            let indexNext = (indexCurrent + 1) % (length);
-            let indexPrev = (indexCurrent - 1) % (length)
-            if (indexPrev === -1) indexPrev = length - 1
-
-            let date = new Date(item.pubDate)
-            let pubDate = `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()}`
-            let decoded = decodeHTMLEntitiesParagraphs(item['content:encoded'])
-            console.log(decoded)
-            let parseDecoded = parse(decoded)
-            let articleData = {
-              articleBody: parseDecoded,
-              articleTitle: item.title,
-              articleAuthor: item['dc:creator'],
-              articleDate: pubDate,
-              nextTitle: parsed.channel.item[indexNext].title,
-              prevTitle: parsed.channel.item[indexPrev].title
-            }
+            let articleData = prepareArticle(parsed.channel.item, item, index)
             setArticleData(articleData)
           }
         })
     })
+    scrollToTop()
     return function cleanup() {
       console.log('unmounted')
       let articleData = {
@@ -69,6 +55,7 @@ function Article(props) {
       setArticleData(articleData)
     }
   }, [props.match.params.title])
+
 
   return (
     <>
@@ -89,7 +76,7 @@ function Article(props) {
                   // backgroundColor: 'black', 
                   position: 'fixed', 
                   top: '50%',
-                  left: '90vw',
+                  left: '93vw',
                   fontSize: '2.5rem',
                   width: '1%',
                   minWidth: '20px', 

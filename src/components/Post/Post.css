@@ -16,7 +16,7 @@
 }
 
 .post .postImage {
-  height: 27vh;
+  min-height: 27vh;
   background-position: center;
   border: 1px solid lightgray;
   background-size: cover;
