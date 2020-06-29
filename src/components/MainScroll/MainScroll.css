@@ -84,6 +84,16 @@
 }
 
 @media (max-width: 768px) {
+  .element {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /* width: 100%; */
+    /* overflow-x: auto; */
+  }
+}
+
+@media (max-width: 768px) {
   /* For mobile phones: */
   .elementArt {
     max-height: 75vh;

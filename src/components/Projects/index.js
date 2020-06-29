@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
+import { select, queensboro, harlem, _3M, bathbw, fortgreene, franklinst, xsre, sevenseven} from '../imageLinks';
 import SliderDots from '../SliderDots';
 import ProjectPreviewScroll from '../ProjectPreviewScroll';
 import './Projects.css';
+import SectionTitleMobile from '../SectionTitleMobile';
 import SlideImage from '../SlideImage';
 import SliderDot from '../SliderDot';
 
 function Projects() {
+
   const [image, setImage] = useState(0)
   const [images, setImages] = useState([])
   const [dots, setDots] = useState([])
   const [project, setProject] = useState('fortgreene')
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      document.getElementsByClassName('item')[0].style.flexDirection = 'row'
+    }
+  }, [])
 
   useEffect(() => {
     switch(project) {
@@ -92,6 +100,7 @@ function Projects() {
   return (
     <>
     <div id='projects'>
+     
       <ProjectPreviewScroll changeProject={changeProject} />
       
         <div id='slideShow'>

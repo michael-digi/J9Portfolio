@@ -6,3 +6,4 @@ export const fortgreene = require.context('./images/FortGreene', false, /\.(png|
 export const franklinst = require.context('./images/FranklinSt', false, /\.(png|jpe?g|svg|webp)$/)
 export const xsre = require.context('./images/XSRE', false, /\.(png|jpe?g|svg|webp)$/)
 export const sevenseven = require.context('./images/SevenSeven', false, /\.(png|jpe?g|svg|webp)$/)
+export const select = require.context('./images/SelectImage', false, /\.(png|jpe?g|svg|webp)$/)

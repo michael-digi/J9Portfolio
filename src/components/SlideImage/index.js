@@ -5,6 +5,7 @@ import './SlideImage.css';
 
 function SlideImage(props) {
   const [loaded, makeLoaded] = useState(false)
+  const [img, setImg] = useState('')
   useEffect(() => {
     makeLoaded(props.loaded)
     console.log(navigator.userAgent)
@@ -26,3 +27,4 @@ function SlideImage(props) {
 }
 
 export default SlideImage
+

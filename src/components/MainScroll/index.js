@@ -1,5 +1,6 @@
 import React, {Suspense, lazy, useEffect} from 'react';
 import { Link, Element, Events, scrollSpy} from 'react-scroll'
+import SectionTitleMobile from '../SectionTitleMobile';
 import LandingPage from '../LandingPage';
 import Projects from '../Projects';
 import './MainScroll.css';
@@ -90,6 +91,7 @@ useEffect(() => {
       </div>
       {/* <LandingPage /> */}
       <Element name='projects' className='element'>
+        <SectionTitleMobile section='Projects' />
         <Projects />
       </Element>
       
